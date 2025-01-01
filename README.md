@@ -4,9 +4,9 @@ Welcome to my personal website repository! 🌐
 
 ## About Me
 
-I am a 3rd-year undergraduate computer science student at Grand Valley State University, passionate about learning, applying new technologies, and solving complex problems. My academic and professional journey has taken me across the United States and internationally, including an enriching study abroad experience and internship in Spain.
+I am a 3rd-year undergraduate computer science student at Grand Valley State University. I am passionate about learning, applying new technologies, and solving complex problems. My academic and professional journey has taken me across the United States and internationally, including 2 study abroad experiences and an internship in Spain.
 
-In addition to my studies, I work part-time as an undergraduate researcher in artificial intelligence (AI), machine learning (ML), and evolutionary computation (EC) research. My current research involves improving evolutionary algorithms through innovative computational techniques. I am also engaged in building software projects, contributing to open-source initiatives, and continuously exploring new technologies.
+In addition to my studies, I work part-time as an undergraduate researcher in artificial intelligence (AI), machine learning (ML), and evolutionary computation (EC) research. My current research involves improving evolutionary algorithms through innovative computational techniques. I also contribute to open-source projects.
 
 ## Projects
 
@@ -15,7 +15,7 @@ In addition to my studies, I work part-time as an undergraduate researcher in ar
 - **Description:** Investigating mutations that enhance evolvability using NK landscapes under the mentorship of Dr. Austin Ferguson. Designing computational experiments to analyze fitness data and test evolvability metrics across simulated landscapes. Leveraging high-performance computing to scale simulations and explore long-term evolutionary dynamics.
 
 ### 2. **Automatic Atrium Segmentation**  
-- **Timeline:** September 2024 – Present (expected: December 2024)
+- **Timeline:** September 2024 – December 2024
 - **Description:** Collaborated on a project at Universidad Carlos III de Madrid to develop a machine learning model for 3D atrium segmentation in cardiology. Focused on preprocessing raw 3D medical imaging data, implementing data pipelines, and optimizing mesh alignment using neural networks.
 
 ### 3. **Exploiting Phylogenetic Analysis to Improve Evolutionary Search Algorithms**  
