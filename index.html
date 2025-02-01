@@ -5,33 +5,88 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Marcos Sanson - Personal Website</title> 
   <style>
-    .project-list {
-      list-style: none;
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
       padding: 0;
+      line-height: 1.6;
+      background-color: #f4f4f9;
+      color: #333;
     }
-    .project-list li {
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 1rem 0;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      margin: 0.5rem 0 0;
+      font-size: 1.2rem;
+    }
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    section {
       margin-bottom: 2rem;
-      padding-left: 2rem;
-      position: relative;
     }
-    .project-list li::before {
-      content: attr(data-number);
-      position: absolute;
-      left: 0;
-      font-weight: bold;
+    h2 {
+      color: #444;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 0.3rem;
+    }
+    ul {
+      padding-left: 1.5rem;
+    }
+    .contact-section {
+      text-align: center;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      width: 60%;
+    }
+    .contact-links {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    .contact-links a {
       color: #4caf50;
-    }
-    .project-details {
-      margin-top: 0.5rem;
-      margin-left: 0;
-    }
-    .project-details dt {
+      text-decoration: none;
+      font-size: 1.2rem;
       font-weight: bold;
-      margin-top: 0.5rem;
+      padding: 10px 15px;
+      border: 2px solid #4caf50;
+      border-radius: 5px;
+      transition: all 0.3s ease-in-out;
     }
-    .project-details dd {
-      margin-left: 0;
-      margin-bottom: 0.5rem;
+    .contact-links a:hover {
+      background-color: #4caf50;
+      color: #fff;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem 0;
+      background-color: #333;
+      color: #fff;
+      margin-top: 2rem;
+    }
+    footer a {
+      color: #4caf50;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
     }
     .articles-section {
       text-align: left;
@@ -47,115 +102,88 @@
       padding: 0;
     }
     .articles-section li {
-      margin-bottom: 2rem;
-      position: relative;
-      padding-left: 1.5rem;
+      margin-bottom: 1.5rem;
     }
-    .articles-section li::before {
-      content: "•";
-      position: absolute;
-      left: 0;
+    .articles-section a {
       color: #4caf50;
-      font-size: 1.2em;
-    }
-    .article-title {
+      text-decoration: none;
       font-weight: bold;
+    }
+    .articles-section a:hover {
+      text-decoration: underline;
+    }
+    .articles-section .article-title {
       display: block;
       margin-bottom: 0.5rem;
     }
-    .article-content {
+    .articles-section .article-content {
+      text-align: left;
       margin-bottom: 0.5rem;
-    }
-    .article-link {
-      font-weight: bold;
-      color: #4caf50;
-      text-decoration: none;
-    }
-    .article-link:hover {
-      text-decoration: underline;
     }
   </style>
 </head>
+<body>
+  <header>
+    <h1>Marcos Sanson</h1>
+    <p>Undergraduate Computer Science Student</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>About Me</h2>
+      <p>
+        I am a 3rd-year undergraduate computer science student at Grand Valley State University. 
+        I am passionate about learning, applying new technologies, and solving complex problems. 
+        My academic and professional journey has taken me across the United States and internationally, including an enriching study abroad experience and internship in Spain.
+      </p>
+      <p>
+        In addition to my studies as a computer science student at Grand Valley State University, I also work part-time as an undergraduate researcher in artificial intelligence (AI), machine learning (ML), and evolutionary computation (EC) research. 
+        My current research involves improving evolutionary algorithms through innovative computational techniques.
+      </p>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <p><strong>Grand Valley State University</strong><br>
+        Bachelor of Science (B.S.) in Computer Science, Minors in Mathematics and Cybersecurity (expected May 2026)<br>
+        Allendale, Michigan, United States<br>
+      </p>
+      <p><strong>Universidad Carlos III de Madrid</strong><br>
+        Study Abroad Program (September 2024 – December 2024)<br>
+        Madrid, Spain
+      </p>
+    </section>
 
     <section>
       <h2>Projects</h2>
-      <ul class="project-list">
-        <li data-number="1.">
-          <strong>Identifying Evolvability-Enhancing Mutations via Computational Models</strong>
-          <dl class="project-details">
-            <dt>Timeline:</dt>
-            <dd>October 2024 – Present (expected: April 2025)</dd>
-            <dt>Description:</dt>
-            <dd>Investigating mutations that enhance evolvability using NK landscapes under the mentorship of Dr. Austin Ferguson. Designing computational experiments to analyze fitness data and test evolvability metrics across simulated landscapes. Leveraging high-performance computing to scale simulations and explore long-term evolutionary dynamics.</dd>
-          </dl>
+      <ul>
+        <li><strong>Identifying Evolvability-Enhancing Mutations via Computational Models</strong><br>
+          <em>October 2024 – Present (expected: April 2025)</em><br>
+          I am researching how certain mutations improve evolvability using NK landscapes. Under the guidance of Dr. Austin Ferguson, I will design computational experiments to analyze fitness data and test evolvability metrics in simulated landscapes. This project leverages high-performance computing to scale simulations and explore long-term evolutionary dynamics.
         </li>
-        
-        <li data-number="2.">
-          <strong>Automatic Atrium Segmentation with Machine Learning</strong>
-          <dl class="project-details">
-            <dt>Timeline:</dt>
-            <dd>September 2024 – December 2024</dd>
-            <dt>GitHub:</dt>
-            <dd><a href="https://github.com/officialconfuzius/cardiologyml" target="_blank">Automatic Atrium Segmentation</a></dd>
-            <dt>Description:</dt>
-            <dd>Collaborated on a project at Universidad Carlos III de Madrid to develop a machine learning model for 3D atrium segmentation in cardiology. Focused on preprocessing raw 3D medical imaging data, implementing data pipelines, and optimizing mesh alignment using neural networks.</dd>
-          </dl>
+        <li><strong>Automatic Atrium Segmentation</strong><br>
+          <em>September 2024 – December 2024</em><br>
+          GitHub Repository: <a href="https://github.com/officialconfuzius/cardiologyml" target="_blank">cardiologyml</a><br>
+          As part of my study abroad program at Universidad Carlos III de Madrid, I developed a machine learning model for 3D atrium segmentation in cardiology. My role involved preprocessing 3D medical imaging data, creating data pipelines, and optimizing mesh alignment using neural networks.
         </li>
-
-        <li data-number="3.">
-          <strong>Exploiting Phylogenetic Analysis to Improve Evolutionary Search Algorithms</strong>
-          <dl class="project-details">
-            <dt>Timeline:</dt>
-            <dd>September 2023 – July 2024</dd>
-            <dt>GitHub:</dt>
-            <dd><a href="https://github.com/amlalejini/phylogeny-informed-subsampling" target="_blank">Phylogeny-Informed Subsampling</a></dd>
-            <dt>Description:</dt>
-            <dd>Worked with Dr. Alexander Lalejini on evolutionary search algorithms using phylogenetic analysis to enhance efficiency. Designed and ran experiments on a high-performance computing cluster, creating novel subsampling methods for optimization problems. Co-authored a peer-reviewed paper presented at GECCO 2024.</dd>
-          </dl>
+        <li><strong>Exploiting Phylogenetic Analysis to Improve Evolutionary Search Algorithms</strong><br>
+          <em>September 2023 – July 2024</em><br>
+          GitHub Repository: <a href="https://github.com/amlalejini/phylogeny-informed-subsampling" target="_blank">phylogeny-informed-subsampling</a><br>
+          I worked with Dr. Alexander Lalejini on using phylogenetic analysis to improve evolutionary search algorithms. My responsibilities included designing and running experiments on a high-performance computing cluster and developing novel subsampling methods for optimization problems. This work resulted in a peer-reviewed paper, which I presented at the 2024 Genetic and Evolutionary Computation Conference (GECCO).
         </li>
-
-        <li data-number="4.">
-          <strong>Procedurally-generated 2D Role-playing Game</strong>
-          <dl class="project-details">
-            <dt>Timeline:</dt>
-            <dd>January 2024 – April 2024</dd>
-            <dt>GitHub:</dt>
-            <dd><a href="https://github.com/Marcos-Sanson/Procedural-RPG" target="_blank">Procedural RPG</a></dd>
-            <dt>Description:</dt>
-            <dd>As part of a software engineering course, I worked with a team to create a procedurally-generated 2D role-playing game. My contributions included designing game mechanics, implementing procedural content generation, and integrating core game features.</dd>
-          </dl>
+        <li><strong>Procedurally-generated 2D Role-playing Game</strong><br>
+          <em>January 2024 – April 2024</em><br>
+          GitHub Repository: <a href="https://github.com/Marcos-Sanson/Procedural-RPG" target="_blank">Procedural-RPG</a><br>
+          As part of a software engineering course, I worked with a team to create a procedurally-generated 2D role-playing game. My contributions included designing game mechanics, implementing procedural content generation, and integrating core game features.
         </li>
-
-        <li data-number="5.">
-          <strong>Meteorological Software Application</strong>
-          <dl class="project-details">
-            <dt>Timeline:</dt>
-            <dd>May 2023 – November 2023</dd>
-            <dt>Description:</dt>
-            <dd>Developed a Python-based application for automating weather database creation and real-time data visualization at Parque Náutico de Castrelo. Improved data processing speeds by over 200,000% and supported environmental projects like erosion management. Worked in a cross-cultural team during a study abroad internship program in Spain.</dd>
-          </dl>
+        <li><strong>Meteorological Software Application</strong><br>
+          <em>May 2023 – November 2023</em><br>
+          During an internship at Parque Náutico de Castrelo in Spain, I developed a Python-based application to automate weather database creation and real-time data visualization. The project improved sensor data processing speeds by over 200,000% and supported environmental efforts like erosion management. I collaborated with a cross-cultural team and worked with multilingual datasets.
         </li>
-
-        <li data-number="6.">
-          <strong>Integrating Machine Learning and Evolutionary Algorithms for Robot Control</strong>
-          <dl class="project-details">
-            <dt>Timeline:</dt>
-            <dd>October 2022 – September 2023</dd>
-            <dt>Description:</dt>
-            <dd>Collaborated with Dr. Jared Moore to integrate ML and evolutionary algorithms for controlling a quadrupedal robot. Designed experiments, analyzed data, and refined evolutionary algorithms to improve performance in complex tasks.</dd>
-          </dl>
-        </li>
-
-        <li data-number="7.">
-          <strong>Spot Micro Agile Robot Dog Project</strong>
-          <dl class="project-details">
-            <dt>Timeline:</dt>
-            <dd>October 2021 – May 2022</dd>
-            <dt>Website:</dt>
-            <dd><a href="https://sites.google.com/view/senior-tech-project" target="_blank">Spot Micro Agile Robot Dog Project</a></dd>
-            <dt>Description:</dt>
-            <dd>Built a fully-operational agile robot similar to the Boston Dynamics Spot agile mobile robot. Collaborated with a partner to develop software in Python, which allows the robot to be remotely controlled via Bluetooth. Conducted extensive testing and debugging to ensure the robot performed well in various environments. Published project documentation and contributed open-source code.</dd>
-          </dl>
+        <li><strong>Spot Micro Agile Robot Dog Project</strong><br>
+          <em>October 2021 – May 2022</em><br>
+          GitHub Repository: <a href="https://sites.google.com/view/senior-tech-project" target="_blank">senior-tech-project</a><br>
+          I built a fully operational robot inspired by the Boston Dynamics Spot agile mobile robot. Partnering with another student, I developed Python-based software that allows for remote control via Bluetooth. The robot uses a Raspberry Pi, 3D-printed components, servo motors, ultrasonic sensors, and an LCD display. We extensively tested and debugged the robot to ensure its functionality across various environments. I also published project documentation and contributed open-source code.
         </li>
       </ul>
     </section>
@@ -169,14 +197,14 @@
         <div class="article-content">
           In December 2024, I was interviewed and highlighted by the GVSU College of Computing. This article discusses my journey, including my robotic dog project, study abroad experiences, and contributions to research.
         </div>
-        <a href="https://www.gvsu.edu/computing/module-news-view.htm?storyId=8A466C68-FDA2-0B5B-201E0E2A15F9EFCC&siteModuleId=313814A9-D6D9-8FAC-FFD1FBE83D65E08C" target="_blank" class="article-link">Read More</a>
+        <a href="https://www.gvsu.edu/computing/module-news-view.htm?storyId=8A466C68-FDA2-0B5B-201E0E2A15F9EFCC&siteModuleId=313814A9-D6D9-8FAC-FFD1FBE83D65E08C" target="_blank">Read More</a>
       </li>
       <li>
         <strong class="article-title">GV Computing Club Focuses on Networking, Growing Careers</strong>
         <div class="article-content">
           In March 2024, I was interviewed and featured in an article highlighting my involvement in the Grand Valley Computing Club, where I focus on networking and advancing career opportunities.
         </div>
-        <a href="https://lanthorn.com/104123/laker_life/gv-computing-club-focuses-on-networking-growing-careers/" target="_blank" class="article-link">Read More</a>
+        <a href="https://lanthorn.com/104123/laker_life/gv-computing-club-focuses-on-networking-growing-careers/" target="_blank">Read More</a>
       </li>
     </ul>
   </section>
