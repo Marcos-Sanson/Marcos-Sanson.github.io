@@ -70,6 +70,37 @@
       border-radius: 5px;
       transition: all 0.3s ease-in-out;
     }
+    .about-container {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+    }
+    
+    .about-image {
+      width: 280px;
+      height: 380px;
+      border-radius: 15px;
+      object-fit: cover;
+      margin-right: 25px;
+    }
+    
+    .about-text {
+      flex: 1;
+    }
+    
+    /* Mobile layout */
+    @media (max-width: 768px) {
+      .about-container {
+        flex-direction: column;
+      }
+      
+      .about-image {
+        width: 100%;
+        max-width: 280px;
+        margin: 0 auto 20px;
+        display: block;
+      }
+    }
     .contact-links a:hover {
       background-color: #4caf50;
       color: #fff;
@@ -151,14 +182,38 @@
       <strong><a href="https://www.gvsu.edu/" target="_blank" style="color: inherit; text-decoration: none; font-size: 1.1em;">Grand Valley State University</a></strong> - <em>Allendale, Michigan, United States</em><br>
       <strong style="font-size: 1.1em;">Bachelor of Science in Computer Science</strong>, Minors in Mathematics and Cybersecurity (<em>expected May 2026</em>)<br>
       <strong style="font-size: 1.1em;">GPA:</strong> 3.893/4.000<br>
-      <strong>Honors:</strong> Ronald E. McNair Post-Baccalaureate Achievement Program Scholar, P. Douglas Kindschi Undergraduate Research Fellowship in the Sciences (<em>Winter 2024, Winter 2025</em>), Dean's List (<em>Fall 2022 - Winter 2024</em>)<br>
-      <strong>Relevant coursework:</strong> Algorithms Engineering, Data Structures and Algorithms, Computer Organization, Introduction to Software Engineering, System-Level Programming & Utilities, Discrete Structures, Linear Algebra, Introduction to Cybersecurity, Intercultural Communication & Service Learning (Spain Study Abroad - Summer 2023)
+      <strong>Honors:</strong>
+      <ul style="margin-top: 5px; margin-bottom: 10px;">
+        <li>Barry Goldwater Scholar</li>
+        <li>Ronald E. McNair Post-Baccalaureate Achievement Program Scholar</li>
+        <li>P. Douglas Kindschi Undergraduate Research Fellowship in the Sciences (<em>Winter 2024, Winter 2025</em>)</li>
+        <li>Dean's List (<em>Fall 2022 - Winter 2024</em>)</li>
+      </ul>
+      
+      <strong>Relevant coursework:</strong>
+      <ul style="margin-top: 5px; margin-bottom: 10px;">
+        <li>Algorithms Engineering</li>
+        <li>Data Structures and Algorithms</li>
+        <li>Computer Organization</li>
+        <li>Introduction to Software Engineering</li>
+        <li>System-Level Programming & Utilities</li>
+        <li>Discrete Structures</li>
+        <li>Linear Algebra</li>
+        <li>Introduction to Cybersecurity</li>
+        <li>Intercultural Communication & Service Learning (Spain Study Abroad - Summer 2023)</li>
+      </ul>
       </p>
       <p>
       <strong><a href="https://www.uc3m.es/Home" target="_blank" style="color: inherit; text-decoration: none; font-size: 1.1em;">Universidad Carlos III de Madrid</a></strong> - <em>Madrid, Spain</em><br>
       <strong style="font-size: 1.1em;">Study Abroad Program</strong> (<em>September 2024 - December 2024</em>)<br>
       <strong>Honors:</strong> Recognized with <strong>Notable (Very Good)</strong> academic distinction<br>
-      <strong>Relevant coursework:</strong> Machine Learning in Healthcare (<strong>10/10 - Excellent</strong>), Creativity and Innovation (<strong>9.7/10 - Excellent</strong>), Web Analytics (<strong>8.5/10 - Very Good</strong>), Computer Networks
+      <strong>Relevant coursework:</strong>
+      <ul style="margin-top: 5px; margin-bottom: 10px;">
+        <li>Machine Learning in Healthcare (<strong>10/10 - Excellent</strong>)</li>
+        <li>Creativity and Innovation (<strong>9.7/10 - Excellent</strong>)</li>
+        <li>Web Analytics (<strong>8.5/10 - Very Good</strong>)</li>
+        <li>Computer Networks</li>
+      </ul>
       </p>
     </section>
     
@@ -323,6 +378,16 @@
     <h2>Featured Articles</h2>
     <ul>
       <li>
+        <a href="https://www.linkedin.com/pulse/preparing-michigans-tech-talent-pipeline-qkm8e/" target="_blank" style="color: #333; text-decoration: none;">
+          <strong class="article-title">Preparing Michigan's Tech Talent Pipeline</strong>
+        </a>
+        <em class="article-date" style="display: block; margin-top: -5px; margin-bottom: 8px;">February 27, 2025</em>
+        <div class="article-content">
+            I was featured in this LinkedIn article about GVSU's new artificial intelligence and software engineering degree programs, which shows the university's efforts to strengthen Michigan's tech talent pipeline. We presented to the GVSU Board of Trustees before they approved these programs in February 2025. It also discusses GVSU's collaboration with industry leaders to develop curriculum that prepares students for the evolving tech sector.
+        </div>
+        <a href="https://www.linkedin.com/pulse/preparing-michigans-tech-talent-pipeline-qkm8e/" target="_blank">Read More</a>
+            </li>
+            <li>
         <a href="https://www.gvsu.edu/computing/module-news-view.htm?storyId=9EE167E4-DE22-D7DB-86DBE32C3EF75250&siteModuleId=F6F5F1DE-0414-D788-E1389DDEDBC8E34A" target="_blank" style="color: #333; text-decoration: none;">
           <strong class="article-title">GVSU Board of Trustees Approves New Programs in AI and Software Engineering</strong>
         </a>
