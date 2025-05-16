@@ -1,62 +1,117 @@
-# Marcos-Sanson.github.io
+# Marcos Sanson – Personal Website
 
-Welcome to my personal website repository! 🌐
+Welcome to the GitHub repository for my personal website: [marcos-sanson.github.io](https://marcos-sanson.github.io) 🌐  
+This site showcases my academic background, research, projects, and professional journey as an undergraduate computer science student.
+
+<p align="center">
+  <img src="Media/Marcos_Sanson_Website_Logo.png" alt="Website Logo" width="140">
+</p>
+
+---
 
 ## About Me
 
-I am a 3rd-year undergraduate computer science student at Grand Valley State University. I am passionate about learning, applying new technologies, and solving complex problems. My academic and professional journey has taken me across the United States and internationally, including 2 study abroad experiences and an internship in Spain.
+I am a fourth-year undergraduate student at [Grand Valley State University](https://www.gvsu.edu/), majoring in Computer Science with minors in Mathematics and Cybersecurity. I am passionate about artificial intelligence, evolutionary computation, and solving real-world problems through software systems.
 
-In addition to my studies, I work part-time as an undergraduate researcher in artificial intelligence (AI), machine learning (ML), and evolutionary computation (EC) research. My current research involves improving evolutionary algorithms through innovative computational techniques. I also contribute to open-source projects.
+In addition to my coursework, I work as an undergraduate researcher on projects related to machine learning, computational modeling, and biologically-inspired algorithms. 
 
-## Projects
+I have also completed an embedded software engineering internship at [Gentex Corporation](https://www.gentex.com/), where I developed embedded software for automotive systems, integrated new microcontrollers, and collaborated with teams in software testing and project management.
 
-### 1. **Identifying Evolvability-Enhancing Mutations via Computational Models**  
-- **Timeline:** October 2024 – Present (expected: April 2025)  
-- **Description:** Investigating mutations that enhance evolvability using NK landscapes under the mentorship of Dr. Austin Ferguson. Designing computational experiments to analyze fitness data and test evolvability metrics across simulated landscapes. Leveraging high-performance computing to scale simulations and explore long-term evolutionary dynamics.
+I previously studied abroad at [Universidad Carlos III de Madrid (UC3M)](https://www.uc3m.es/), where I participated in research on medical imaging and machine learning.
 
-### 2. **Automatic Atrium Segmentation with Machine Learning**  
-- **Timeline:** September 2024 – December 2024  
-- **GitHub:** [Automatic Atrium Segmentation](https://github.com/officialconfuzius/cardiologyml)  
-- **Description:** Collaborated on a project at Universidad Carlos III de Madrid to develop a machine learning model for 3D atrium segmentation in cardiology. Focused on preprocessing raw 3D medical imaging data, implementing data pipelines, and optimizing mesh alignment using neural networks.
+---
 
-### 3. **Exploiting Phylogenetic Analysis to Improve Evolutionary Search Algorithms**  
-- **Timeline:** September 2023 – July 2024  
-- **GitHub:** [Phylogeny-Informed Subsampling](https://github.com/amlalejini/phylogeny-informed-subsampling)  
-- **Description:** Worked with Dr. Alexander Lalejini on evolutionary search algorithms using phylogenetic analysis to enhance efficiency. Designed and ran experiments on a high-performance computing cluster, creating novel subsampling methods for optimization problems. Co-authored a peer-reviewed paper presented at GECCO 2024.
 
-### 4. **Procedurally-generated 2D Role-playing Game**  
-- **Timeline:** January 2024 – April 2024  
-- **GitHub:** [Procedural RPG](https://github.com/Marcos-Sanson/Procedural-RPG)  
-- **Description:** As part of a software engineering course, I worked with a team to create a procedurally-generated 2D role-playing game. My contributions included designing game mechanics, implementing procedural content generation, and integrating core game features.
+## Featured Projects
 
-### 5. **Meteorological Software Application**  
-- **Timeline:** May 2023 – November 2023  
-- **Description:** Developed a Python-based application for automating weather database creation and real-time data visualization at Parque Náutico de Castrelo. Improved data processing speeds by over 200,000% and supported environmental projects like erosion management. Worked in a cross-cultural team during a study abroad internship program in Spain.
+### 1. [Evolvability-Enhancing Mutations via Computational Models](https://github.com/FergusonAJ/quantifying_evolvability)  
+**October 2024 – May 2025**  
+I ran large-scale simulations on NK fitness landscapes to identify mutations that improve long-term evolvability. I analyzed fitness variability, quantified adaptability with statistical metrics, and compared the effects of different mutation patterns. Understanding these mechanisms can advance our knowledge of adaptive systems and help design more robust evolutionary algorithms. 
 
-### 6. **Integrating Machine Learning and Evolutionary Algorithms for Robot Control**  
-- **Timeline:** October 2022 – September 2023  
-- **Description:** Collaborated with Dr. Jared Moore to integrate ML and evolutionary algorithms for controlling a quadrupedal robot. Designed experiments, analyzed data, and refined evolutionary algorithms to improve performance in complex tasks.
+This research was supported by the [Kindschi Undergraduate Research Fellowship](https://www.gvsu.edu/ours/kindschi-fellowship-860.htm).  
 
-### 7. **Spot Micro Agile Robot Dog Project**  
-- **Timeline:** October 2021 – May 2022  
-- **Website:** [Spot Micro Agile Robot Dog Project](https://sites.google.com/view/senior-tech-project)  
-- **Description:** Built a fully-operational agile robot similar to the Boston Dynamics Spot agile mobile robot. Collaborated with a partner to develop software in Python, which allows the robot to be remotely controlled via Bluetooth. Conducted extensive testing and debugging to ensure the robot performed well in various environments. Published project documentation and contributed open-source code.
 
-## Highlights
+<p align="center">
+  <img src="Media/Marcos_Sanson_GVSU_Student_Scholars_Day_Evolvability_Poster.png" alt="Evolvability Poster" width="600">
+</p>
 
-- **Professional Experience:**  
-  Internships in embedded software engineering (Gentex Corporation in the United States) and software development (Parque Náutico de Castrelo in Spain).
-- **Awards:**  
-  Eagle Scout, SHPE Northrop Grumman Scholarship (2024), Kindschi Undergraduate Research Fellow (2024), McNair Scholar.
-- **Projects:**  
-  Spot Micro Agile Robot Dog project and contributor to multiple interdisciplinary research initiatives.
+---
+
+### 2. [Automatic Atrium Segmentation with Machine Learning](https://github.com/officialconfuzius/cardiologyml)  
+**September 2024 – December 2024**  
+I developed a machine learning model for 3D atrial segmentation as part of a research team at Universidad Carlos III de Madrid. I built data pipelines, preprocessed 3D cardiac imaging, and aligned meshes using neural networks to enhance model accuracy.
+
+<p align="center">
+  <img src="https://github.com/officialconfuzius/cardiologyml/raw/main/docs/Automatic_Atrium_Segmentation_Poster_Image.png" alt="Atrium Segmentation Poster" width="600">
+</p>
+
+---
+
+### 3. [Phylogeny-Informed Subsampling for Evolutionary Search](https://github.com/amlalejini/phylogeny-informed-subsampling)  
+**September 2023 – July 2024**  
+I improved evolutionary search algorithms using runtime phylogenetic analysis. I designed experiments, analyzed data, and co-authored a peer-reviewed paper presented at [GECCO 2024](https://gecco-2024.sigevo.org/).
+
+This research was supported by the [Kindschi Undergraduate Research Fellowship](https://www.gvsu.edu/ours/kindschi-fellowship-860.htm).  
+
+
+<p align="center">
+  <img src="Media/Marcos_Sanson_GECCO_2024_Poster.png" alt="GECCO Poster" width="600">
+</p>
+
+---
+
+### 4. [Procedural 2D Role-Playing Game](https://github.com/Marcos-Sanson/Procedural-RPG)  
+**January 2024 – April 2024**  
+I worked on a procedurally generated 2D RPG as part of a software engineering course. I designed core mechanics, implemented terrain generation, and contributed to gameplay systems and user interface development.
+
+<p align="center">
+  <img src="https://github.com/Marcos-Sanson/Procedural-RPG/raw/main/Documentation/Screenshots/screenshot1.png" alt="Procedural RPG Screenshot" width="600">
+</p>
+
+---
+
+### 5. [Meteorological Software for Environmental Monitoring](https://github.com/Marcos-Sanson/MeteoGalicia-Application)  
+**May 2023 – November 2023**  
+I created a multilingual Python application to automate weather data processing and visualization during my study abroad in Spain. The tool improved processing speed by over 200,000% and supported sustainability projects.
+
+<p align="center">
+  <img src="https://github.com/Marcos-Sanson/MeteoGalicia-Application/raw/main/Example_Data/GUI_Example_1.png" alt="MeteoGalicia GUI Example" width="600">
+</p>
+
+---
+
+### 6. Integrated Machine Learning for Robot Control  
+**October 2022 – September 2023**  
+I optimized robot gait control by combining machine learning and neuroevolution. I designed experiments, tuned hyperparameters, and analyzed results using PyTorch.
+
+---
+
+### 7. [Spot Micro Agile Robot Dog](https://sites.google.com/view/senior-tech-project)  
+**October 2021 – May 2022**  
+I built a low-cost quadruped robot modeled after Boston Dynamics’ Spot. I developed Python software for Bluetooth-based control and integrated sensors, 3D-printed components, and embedded systems for locomotion and obstacle detection.
+
+---
+
+
+## Research & Recognition
+
+- **Current Work:** Artificial intelligence for spacecraft control ([Air Force Research Laboratory (AFRL) Scholars Program](https://afrlscholars.usra.edu/), Summer 2025 Internship)  
+- **[Goldwater Scholar](https://goldwaterscholarship.gov/) (2025):** One of 441 students nationally recognized in 2025 for research potential in STEM  
+- **[McNair Scholar](https://www.ed.gov/grants-and-programs/grants-higher-education/trio/trio--ronald-e-mcnair-postbaccalaureate-achievement-program--home-page):** Preparing for graduate studies in Computer Science  
+- **[Kindschi Undergraduate Research Fellow](https://www.gvsu.edu/ours/kindschi-fellowship-860.htm):** Awarded twice for two Computer Science research projects  
+- **Study Abroad:** Completed two study abroad programs in [Madrid](https://www.uc3m.es/) and [Ourense, Spain](https://www.gvsu.edu/studyabroad/)
+
+---
 
 ## Connect with Me
 
-Feel free to explore my projects and reach out through the links below:
+- 🌐 [Website](https://marcos-sanson.github.io)  
+- 💼 [LinkedIn](https://www.linkedin.com/in/marcos-sanson)  
+- 💻 [GitHub](https://github.com/Marcos-Sanson)  
+- 📧 [Email](mailto:msanson128@gmail.com)
 
-- [Personal Website](https://marcos-sanson.github.io)  
-- [GitHub](https://github.com/Marcos-Sanson)  
-- [LinkedIn](https://www.linkedin.com/in/marcos-sanson)  
+---
 
-Thank you for visiting!
+> Built using HTML, CSS, and hosted on GitHub Pages.  
+> Last updated: **May 2025**
+

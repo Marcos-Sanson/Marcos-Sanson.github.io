@@ -1,11 +1,35 @@
 <!DOCTYPE html>
+</style>
 <html lang="en">
 <head>
+<!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BS9C8Z97H9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-BS9C8Z97H9');
+  </script>
+
+  <!--
+    Marcos Sanson - Personal Website
+    index.html
+    This file contains the main structure and content for Marcos Sanson's personal website.
+    It includes sections for About, Education, Work Experience, Projects, Articles, Scholarships, and Contact.
+    All styles are included in the <style> tag for simplicity.
+  -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal website of Marcos Sanson, undergraduate computer science student at Grand Valley State University with a focus on AI, machine learning, and evolutionary computation.">
   <title>Marcos Sanson - Personal Website</title> 
+  <link rel="icon" href="Media/Marcos_Sanson_Website_Logo.png" type="image/png">
   <style>
-    /* Basic page styling */
+    /* 
+      ===========================
+      Basic Page Styling
+      ===========================
+    */
     body {
       font-family: Arial, sans-serif;
       margin: 0;
@@ -15,7 +39,19 @@
       color: #333;
     }
     
-    /* Header styling */
+    html {
+  scroll-behavior: smooth;
+    }
+
+    .scroll-target {
+  scroll-margin-top: 65px;
+    }
+
+    /* 
+      ===========================
+      Header Styling
+      ===========================
+    */
     header {
       background-color: #333;
       color: #fff;
@@ -33,9 +69,13 @@
       font-size: 1.2rem;
     }
     
-    /* Main content container */
+    /* 
+      ===========================
+      Main Content Container
+      ===========================
+    */
     main {
-      max-width: 850px;
+      max-width: 875px;
       margin: 2rem auto;
       padding: 1rem;
       background: #fff;
@@ -43,7 +83,11 @@
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     }
     
-    /* Section styling */
+    /* 
+      ===========================
+      Section Styling
+      ===========================
+    */
     section {
       margin-bottom: 2rem;
     }
@@ -57,8 +101,104 @@
     ul {
       padding-left: 1.5rem;
     }
-    
-    /* Contact section styling */
+
+    /* 
+      ===========================
+      Navigation Bar Styling
+      ===========================
+    */
+    nav.navbar a {
+      color: #333;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav.navbar a:hover {
+      color: #4caf50 !important;
+    }
+
+    /* Main navbar styling */
+    nav.navbar {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      background: #f4f4f9;
+      padding: 0.7rem 0;
+      font-size: 1.1rem;
+      border-bottom: 1px solid #ddd;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    /* Hide navbar on smaller screens */
+    @media (max-width: 768px) {
+      nav.navbar {
+        display: none;
+      }
+    }
+
+
+    /*
+      ===========================
+      Project Section Styling
+      ===========================
+    */
+    .project-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      display: block;
+      margin-bottom: 4px;
+    }
+    .project-item {
+      margin-bottom: 45px;
+    }
+
+    /* 
+      ===========================
+      Video Section Styling
+      ===========================
+    */
+    .video-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
+
+    .video-block {
+      text-align: center;
+      max-width: 400px;
+      flex: 1;
+    }
+
+    .video-block iframe {
+      width: 100%;
+      height: 225px;
+      border-radius: 8px;
+    }
+
+    .video-caption {
+      font-size: 1.1rem;
+      font-weight: bold;
+      margin-top: 5px;
+    }
+
+    /* Responsive video layout for smaller screens */
+    @media (max-width: 768px) {
+      .video-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    /* 
+      ===========================
+      Contact Section Styling
+      ===========================
+    */
     .contact-section {
       text-align: center;
       margin: 2rem auto;
@@ -91,26 +231,56 @@
       color: #fff;
     }
     
-    /* About section layout */
+    /* 
+      ===========================
+      About Section Layout
+      ===========================
+    */
     .about-container {
       display: flex;
       flex-direction: row;
       align-items: flex-start;
+      flex-wrap: wrap;
     }
-    
+
     .about-image {
       width: 280px;
       height: 380px;
       border-radius: 15px;
       object-fit: cover;
       margin-right: 25px;
+      margin-bottom: 20px;
     }
-    
+
     .about-text {
       flex: 1;
+      min-width: 250px;
     }
-    
-    /* Articles section styling */
+
+    /* Stack image and text vertically on small screens */
+    @media (max-width: 768px) {
+      .about-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .about-image {
+        margin-right: 0;
+        margin-bottom: 15px;
+      }
+
+      .about-text {
+        text-align: left;
+        width: 100%;
+      }
+    }
+
+    /* 
+      ===========================
+      Articles Section Styling
+      ===========================
+    */
     .articles-section {
       text-align: left;
       margin: 2rem auto;
@@ -150,7 +320,11 @@
       margin-bottom: 0.5rem;
     }
     
-    /* Footer styling */
+    /* 
+      ===========================
+      Footer Styling
+      ===========================
+    */
     footer {
       text-align: center;
       padding: 1rem 0;
@@ -167,8 +341,104 @@
     footer a:hover {
       text-decoration: underline;
     }
+  
+    /* ===========================
+      Dark Mode Overrides
+      =========================== */
+    body.dark-mode {
+      background-color: #121212;
+      color: #e0e0e0;
+    }
+
+    body.dark-mode header,
+    body.dark-mode footer {
+      background-color: #2b2b2b;
+      color: #e0e0e0;
+    }
+
+    body.dark-mode a {
+      color: #90caf9;
+    }
+
+    body.dark-mode nav.navbar {
+      background-color: #1f1f1f !important;
+      border-bottom: 1px solid #333;
+    }
+
+    body.dark-mode nav.navbar a {
+      color: #e0e0e0 !important;
+    }
+
+    body.dark-mode nav.navbar a:hover {
+      color: #90caf9 !important;
+    }
+
+    body.dark-mode main,
+    body.dark-mode section,
+    body.dark-mode .contact-section,
+    body.dark-mode .articles-section {
+      background-color: #1e1e1e;
+      color: #e0e0e0;
+      box-shadow: none;
+    }
+
+    body.dark-mode h2 {
+      color: #ffffff;
+    }
+
+    body.dark-mode p[style*="italic"] {
+      color: #cccccc !important;
+    }
+
+    body.dark-mode .article-title,
+    body.dark-mode .article-content,
+    body.dark-mode .articles-section a {
+      color: #d0d0d0;
+    }
+
+    body.dark-mode .articles-section a {
+      color: #90caf9;
+      text-decoration: underline;
+    }
+
+    body.dark-mode .contact-links a {
+      border-color: #90caf9;
+      color: #90caf9;
+    }
+
+    body.dark-mode .contact-links a:hover {
+      background-color: #90caf9;
+      color: #1e1e1e;
+    }
+
+    #darkModeToggle {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      width: 35px;
+      height: 35px;
+      background-color: #333;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      z-index: 9999;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    #darkModeToggle:hover {
+      background-color: #4caf50;
+    }
     
-    /* Responsive design for mobile devices */
+    body {
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    
+    /* 
+      ===========================
+      Responsive Design for Mobile Devices
+      ===========================
+    */
     @media (max-width: 768px) {
       section img {
         float: none;
@@ -179,114 +449,423 @@
         max-width: 280px;
       }
     }
+
+    /* Hide navbar on screens smaller than 768px */
+    @media (max-width: 768px) {
+      nav.navbar {
+        display: none;
+      }
+    }
+
+    /* ===========================
+      Highlight Color on Text Selection
+      =========================== */
+
+    /* Light mode */
+    ::selection {
+      background-color: #a5d6a7; /* light green */
+      color: #000;
+    }
+
+    /* Dark mode */
+    body.dark-mode ::selection {
+      background-color: #90caf9; /* light blue */
+      color: #000;
+    }
+
+    /* ===========================
+      Link Hover Color
+      =========================== */
+    /* Global link hover styling */
+    a:hover {
+      color: #4caf50 !important; /* green in light mode */
+      transition: color 0.2s ease;
+    }
+
+    body.dark-mode a:hover {
+      color: #90caf9 !important; /* light blue in dark mode */
+    }
+
+    /* EXCEPTION: Keep contact section styling consistent */
+    .contact-links a:hover {
+      color: #fff !important;           /* white text when hovered */
+      background-color: #4caf50 !important;  /* green background */
+    }
+
+    body.dark-mode .contact-links a:hover {
+      color: #1e1e1e !important;         /* dark background text */
+      background-color: #90caf9 !important;  /* blue background */
+    }
+
+    /* Dark mode article title hover */
+    body.dark-mode .article-title:hover {
+      color: #90caf9 !important;  /* light blue */
+    }
+
   </style>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Marcos Sanson",
+      "url": "https://marcos-sanson.github.io/",
+      "logo": "https://marcos-sanson.github.io/Media/Marcos_Sanson_Website_Logo.png"
+    }
+    </script>
+  
 </head>
 <body>
+  <!-- ===========================
+       Header Section
+       =========================== -->
   <header>
     <h1>Marcos Sanson</h1>
     <p>Undergraduate Computer Science Student</p>
   </header>
 
+  <!-- ===========================
+     Navigation Bar
+     =========================== -->
+      <nav class="navbar">
+      <a href="#about" style="color: #333; text-decoration: none; font-weight: bold;">About</a>
+      <a href="#recent-posts" style="color: #333; text-decoration: none; font-weight: bold;">Recent Posts</a>
+      <a href="#education" style="color: #333; text-decoration: none; font-weight: bold;">Education</a>
+      <a href="#work-experience" style="color: #333; text-decoration: none; font-weight: bold;">Work Experience</a>
+      <a href="#projects" style="color: #333; text-decoration: none; font-weight: bold;">Projects</a>
+      <a href="#articles" style="color: #333; text-decoration: none; font-weight: bold;">Articles</a>
+      <a href="#scholarships" style="color: #333; text-decoration: none; font-weight: bold;">Scholarships</a>
+      <a href="#contact" style="color: #333; text-decoration: none; font-weight: bold;">Contact</a>
+    </nav>   
+    
+
+  <!-- ===========================
+       Main Content
+       =========================== -->
   <main>
+    <!-- 
+      ===========================
+      About Me Section
+      ===========================
+    -->
     <section style="margin-bottom: 25px;">
+      <a id="about" class="scroll-target"></a>
       <h2>About Me</h2>
-      <img src="Marcos_Sanson_Headshot_Photo.png" alt="Marcos Sanson Headshot" style="width: 280px; height: 380px; border-radius: 15px; object-fit: cover; float: left; margin-right: 25px;">
-      I am a 3rd-year undergraduate computer science student at <a href="https://www.gvsu.edu/" target="_blank">Grand Valley State University</a>. 
-      I am passionate about learning, applying new technologies, and solving complex problems. 
-      <p>
-        My academic and professional journey has taken me across the United States and internationally, including two separate study abroad experiences in Spain.
-      </p>
-      </p>
-      <p>
-        In addition to my studies as a computer science student at Grand Valley State University, I also work part-time as an undergraduate researcher in artificial intelligence (AI), machine learning (ML), and evolutionary computation (EC) research. 
-      <p>
-        My current research focuses on designing and optimizing computational models, evolutionary algorithms, and machine learning techniques to solve complex problems.       </p>
-      </p>  
+      <div class="about-container">
+        <!-- Professional headshot image -->
+        <img src="Media/Marcos_Sanson_Headshot_Photo.png" alt="Professional headshot of Marcos Sanson" class="about-image">
+        <div class="about-text">
+          <p>
+            I am a 4th-year undergraduate computer science student at 
+            <a href="https://www.gvsu.edu/" target="_blank">Grand Valley State University</a>. 
+            I am passionate about learning, applying new technologies, and solving complex problems.
+          </p>
+          <p>
+            My academic and professional journey has taken me across the United States and internationally, including two separate study abroad experiences in Spain.
+          </p>
+          <p>
+            In addition to pursuing a degree in computer science at Grand Valley State University, I am also an undergraduate researcher studying artificial intelligence (AI), machine learning (ML), and evolutionary computation (EC).
+          </p>
+          <p>
+            My current research focuses on designing and optimizing computational models, evolutionary algorithms, and machine learning techniques to solve complex problems.
+          </p>
+        </div>
+      </div>
     </section>
 
+    <!-- 
+      ===========================
+      Recent Posts Section
+      ===========================
+    -->
     <section>
+      <a id="recent-posts" class="scroll-target"></a>
+      <h2>Recent Posts</h2>
+      <div style="display: flex; justify-content: center; margin: 20px 0;">
+        <!-- Embedded LinkedIn post with fallback image -->
+        <div style="position: relative; width: 504px; max-width: 100%;">
+          <iframe 
+            src="https://www.linkedin.com/embed/feed/update/urn:li:share:7318285521649115137" 
+            height="849" 
+            width="504" 
+            allowfullscreen 
+            title="LinkedIn Embedded Post"
+            style="border: none; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); width: 100%; display: block;"
+            onerror="this.style.display='none';document.getElementById('linkedin-fallback-link').style.display='block';">
+          </iframe>
+          <a 
+            id="linkedin-fallback-link"
+            href="https://www.linkedin.com/posts/marcos-sanson_afrl-afrlscholars-usra-activity-7318285522647359488-8pUa?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEdJFJYBQAKfg_30GaJAtQeaRx812JNBhpA"
+            target="_blank"
+            style="display: none; width: 100%;"
+          >
+            <img 
+              src="Media/Marcos_Sanson_LinkedIn_Post_4-16-25.png" 
+              alt="LinkedIn Post Screenshot"
+              style="width: 100%; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);" 
+            />
+          </a>
+        </div>
+        <script>
+          // Fallback for browsers that block LinkedIn embeds
+          window.addEventListener('DOMContentLoaded', function() {
+            var iframe = document.querySelector('iframe[title="LinkedIn Embedded Post"]');
+            var fallbackLink = document.getElementById('linkedin-fallback-link');
+            // If iframe fails to load after a short delay, show fallback image link
+            setTimeout(function() {
+              if (iframe && (iframe.contentDocument === null || iframe.contentWindow.length === 0)) {
+                iframe.style.display = 'none';
+                fallbackLink.style.display = 'block';
+              }
+            }, 2500);
+          });
+        </script>
+      </div>
+    </section>
+    
+    <!-- 
+      ===========================
+      Education Section
+      ===========================
+    -->
+    <section>
+      <a id="education" class="scroll-target"></a>
       <h2>Education</h2>
-      <p>
-      <strong><a href="https://www.gvsu.edu/" target="_blank" style="color: inherit; text-decoration: none; font-size: 1.1em;">Grand Valley State University</a></strong> - <em>Allendale, Michigan, United States</em><br>
-      <strong style="font-size: 1.1em;">Bachelor of Science in Computer Science</strong>, Minors in Mathematics and Cybersecurity (<em>expected May 2026</em>)<br>
-      <strong style="font-size: 1.1em;">GPA:</strong> 3.893/4.000<br>
-      <strong>Honors:</strong>
-      <ul style="margin-top: 5px; margin-bottom: 10px;">
+
+      <!-- Grand Valley State University -->
+      <h3 style="margin-bottom: 0.2rem;">
+        <a href="https://www.gvsu.edu/" target="_blank" style="color: inherit; text-decoration: none;">
+          Grand Valley State University
+        </a>
+      </h3>
+      <p style="margin-top: 0; margin-bottom: 0.2rem;"><em>Allendale, Michigan, United States</em></p>
+      <p style="margin: 0 0 1rem 0;">
+        <strong>Bachelor of Science in Computer Science</strong>, Minors in Mathematics and Cybersecurity  
+        (<em>expected May 2026</em>)  
+        <br><strong>GPA:</strong> 3.913/4.000
+      </p>
+
+      <p style="margin-bottom: 0;"><strong>Honors and Awards:</strong></p>
+      <ul style="margin-top: 0; margin-bottom: 10px;">
         <li>Barry Goldwater Scholar</li>
         <li>Ronald E. McNair Post-Baccalaureate Achievement Program Scholar</li>
         <li>P. Douglas Kindschi Undergraduate Research Fellowship in the Sciences (<em>Winter 2024, Winter 2025</em>)</li>
-        <li>Dean's List (<em>Fall 2022 - Winter 2024</em>)</li>
+        <li>Dean's List (<em>Fall 2022 – Winter 2025</em>)</li>
+      </ul>
+
+      <p style="margin-bottom: 0;"><strong>Relevant Coursework:</strong></p>
+
+      <!-- Computer Science Courses -->
+      <p style="margin-bottom: 0;"><strong>Computer Science:</strong></p>
+      <ul style="margin-top: 5px; margin-bottom: 10px;">
+        <li><a href="https://www.gvsu.edu/catalog/course/cis-162.htm" target="_blank">Computer Science I (CIS 162)</a></li>
+        <li><a href="https://www.gvsu.edu/catalog/course/cis-163.htm" target="_blank">Computer Science II (CIS 163)</a></li>
+        <li><a href="https://www.gvsu.edu/catalog/course/cis-241.htm" target="_blank">System-Level Programming & Utilities (CIS 241)</a></li>
+        <li><a href="https://www.gvsu.edu/catalog/course/cis-258.htm" target="_blank">Introduction to Cybersecurity (CIS 258)</a></li>
+        <li><a href="https://www.gvsu.edu/catalog/course/cis-290.htm" target="_blank">Professional Responsibilities (CIS 290)</a></li>
+        <li><a href="https://www.gvsu.edu/catalog/course/cis-263.htm" target="_blank">Data Structures and Algorithms (CIS 263)</a></li>
+        <li><a href="https://www.gvsu.edu/catalog/course/cis-350.htm" target="_blank">Introduction to Software Engineering (CIS 350)</a></li>
+        <li><a href="https://www.gvsu.edu/catalog/course/cis-351.htm" target="_blank">Computer Organization (CIS 351)</a></li>
+        <li><a href="https://www.gvsu.edu/catalog/course/cis-380.htm" target="_blank">Algorithms Engineering (CIS 380)</a></li>
+        <li><a href="https://www.gvsu.edu/catalog/course/cis-378.htm" target="_blank">Applied Machine Learning (CIS 378)</a></li>
+        <li><a href="https://www.gvsu.edu/catalog/course/cis-343.htm" target="_blank">Structure of Programming Languages (CIS 343)</a></li>
+        <li><a href="https://www.gvsu.edu/catalog/course/cis-353.htm" target="_blank">Database (CIS 353)</a></li>
+        <li><a href="https://www.gvsu.edu/catalog/course/cis-358.htm" target="_blank">Information Assurance (CIS 358)</a></li>
       </ul>
       
-      <strong>Relevant coursework:</strong>
+      <!-- Mathematics Courses -->
+      <p style="margin-bottom: 0;"><strong>Mathematics:</strong></p>
       <ul style="margin-top: 5px; margin-bottom: 10px;">
-        <li>Algorithms Engineering</li>
-        <li>Data Structures and Algorithms</li>
-        <li>Computer Organization</li>
-        <li>Introduction to Software Engineering</li>
-        <li>System-Level Programming & Utilities</li>
-        <li>Discrete Structures</li>
-        <li>Linear Algebra</li>
-        <li>Introduction to Cybersecurity</li>
-        <li>Intercultural Communication & Service Learning (Spain Study Abroad - Summer 2023)</li>
+        <li><a href="https://www.gvsu.edu/catalog/course/mth-201.htm" target="_blank">Calculus I (MTH 201)</a></li>
+        <li><a href="https://www.gvsu.edu/catalog/course/mth-202.htm" target="_blank">Calculus II (MTH 202)</a></li>
+        <li><a href="https://www.gvsu.edu/catalog/course/mth-204.htm" target="_blank">Linear Algebra I (MTH 204)</a></li>
+        <li><a href="https://www.gvsu.edu/catalog/course/mth-225.htm" target="_blank">Discrete Structures: Computer Science 1 (MTH 225)</a></li>
+        <li><a href="https://www.gvsu.edu/catalog/course/mth-325.htm" target="_blank">Discrete Structures: Computer Science 2 (MTH 325)</a></li>
       </ul>
-      </p>
-      <p>
-      <strong><a href="https://www.uc3m.es/Home" target="_blank" style="color: inherit; text-decoration: none; font-size: 1.1em;">Universidad Carlos III de Madrid</a></strong> - <em>Madrid, Spain</em><br>
-      <strong style="font-size: 1.1em;">Study Abroad Program</strong> (<em>September 2024 - December 2024</em>)<br>
-      <strong>Honors:</strong> Recognized with <strong>Notable (Very Good)</strong> academic distinction<br>
-      <strong>Relevant coursework:</strong>
+      
+      <!-- Science & Interdisciplinary Courses -->
+      <p style="margin-bottom: 0;"><strong>Science & Interdisciplinary:</strong></p>
       <ul style="margin-top: 5px; margin-bottom: 10px;">
-        <li>Machine Learning in Healthcare (<strong>10/10 - Excellent</strong>)</li>
-        <li>Creativity and Innovation (<strong>9.7/10 - Excellent</strong>)</li>
-        <li>Web Analytics (<strong>8.5/10 - Very Good</strong>)</li>
-        <li>Computer Networks</li>
+        <li><a href="https://www.gvsu.edu/catalog/course/bio-120.htm" target="_blank">General Biology I (BIO 120)</a></li>
+        <li><a href="https://www.gvsu.edu/catalog/course/itc-100.htm" target="_blank">Intercultural Communication & Service Learning – Spain Study Abroad (ITC 100)</a></li>
       </ul>
+
+      <!-- Divider -->
+      <hr style="margin: 2rem 0; border: none; border-top: 1px solid #ccc;">
+            
+      <!-- Universidad Carlos III de Madrid -->
+      <h3 style="margin-bottom: 0.2rem;">
+        <a href="https://www.uc3m.es/soe/home" target="_blank" style="color: inherit; text-decoration: none;">
+          Universidad Carlos III de Madrid (UC3M)
+        </a>
+      </h3>
+      <p style="margin-top: 0;"><em>Madrid, Spain</em></p>
+      <p style="margin-bottom: 0.6rem;">
+        <strong>Study Abroad Program</strong> (<em>September 2024 – December 2024</em>)  
+        <br>
+        <a href="https://www.uc3m.es/Home" target="_blank">UC3M</a> is a prestigious Spanish public university recognized for its excellence in research, teaching, and innovation.
+        I was admitted to the <a href="https://www.uc3m.es/soe/home" target="_blank">School of Engineering</a> through a semester-long exchange program.
       </p>
-    </section>
-    
-  
+      
+      <p style="margin-bottom: 0;"><strong>Honors:</strong> Recognized with <strong>Notable (Very Good)</strong> academic distinction</p>
+      
+      <p style="margin-bottom: 0;"><strong>Relevant Coursework:</strong></p>
+      <ul style="margin-top: 5px; margin-bottom: 10px;">
+        <li><a href="https://aplicaciones.uc3m.es/cpa/generaFicha?asig=16803&est=350&idioma=2&plan=392" target="_blank">Machine Learning in Healthcare</a> (<strong>10/10 – Excellent</strong>)</li>
+        <li><a href="https://aplicaciones.uc3m.es/cpa/generaFicha?asig=13457&est=212&idioma=2&plan=383" target="_blank">Creativity and Innovation</a> (<strong>9.7/10 – Excellent</strong>)</li>
+        <li><a href="https://aplicaciones.uc3m.es/cpa/generaFicha?asig=16507&est=350&idioma=2&plan=392" target="_blank">Web Analytics</a> (<strong>8.5/10 – Very Good</strong>)</li>
+        <li><a href="https://aplicaciones.uc3m.es/cpa/generaFicha?asig=16486&est=350&idioma=2&plan=392" target="_blank">Computer Networks</a></li>
+      </ul>
+
+      <!-- 
+        ===========================
+        Work Experience Section
+        ===========================
+      -->
+      <section>
+        <a id="work-experience" class="scroll-target"></a>
+        <h2>Work Experience</h2>
+      
+        <!-- AFRL Scholars Program -->
+        <div style="margin-bottom: 0;">
+          <strong>Research Intern</strong><br>
+          <em>May 2025 – Present</em><br>
+          <a href="https://afrlscholars.usra.edu/" target="_blank">Air Force Research Laboratory Scholars Program</a> – Kirtland Air Force Base, Albuquerque, New Mexico, United States
+        </div>
+        <ul style="margin-top: 5px; margin-bottom: 15px;">
+          <li>Selected for the competitive AFRL Scholars Program to join a research team focused on artificial intelligence for autonomous space systems</li>
+          <li>Assigned to the project <em>“Artificial intelligence spacecraft control for contested space applications using reinforcement learning”</em></li>
+        </ul>
+        
+        <!-- GVSU Undergraduate Researcher -->
+        <div style="margin-bottom: 0;">
+          <strong>Computer Science Undergraduate Researcher</strong><br>
+          <em>October 2022 – Present</em><br>
+          <a href="https://www.gvsu.edu/computing/" target="_blank">Grand Valley State University</a> – Allendale, Michigan, United States
+        </div>
+        <ul style="margin-top: 5px; margin-bottom: 15px;">
+          <li>Collaborate with computer science professors on research in artificial intelligence (AI) and machine learning (ML)</li>
+          <li>Develop and optimize evolutionary algorithms using experimental design, high-performance computing, statistical tools, and ML frameworks like PyTorch</li>
+          <li>Co-authored a peer-reviewed paper published by ACM and presented at the <a href="https://gecco-2024.sigevo.org/" target="_blank">Genetic and Evolutionary Computation Conference</a></li>
+        </ul>
+      
+        <!-- Gentex Corporation Internship -->
+        <div style="margin-bottom: 0;">
+          <strong>Embedded Software Engineering Intern</strong><br>
+          <em>May 2024 – August 2024</em><br>
+          <a href="https://www.gentex.com/" target="_blank">Gentex Corporation</a> – Zeeland, Michigan, United States
+        </div>
+        <ul style="margin-top: 5px; margin-bottom: 15px;">
+          <li>Led integration of new microcontrollers in light-sensing and auto-dimming vehicle mirrors to improve real-time processing</li>
+          <li>Deployed embedded software, reviewed code, wrote design documentation, and conducted testing</li>
+          <li>Worked with teams in software testing, project management, requirements engineering, and finance</li>
+        </ul>
+      
+        <!-- GVSU IT Support -->
+        <div style="margin-bottom: 0;">
+          <strong>Desktop Support Student Technician</strong><br>
+          <em>January 2023 – April 2025</em><br>
+          <a href="https://www.gvsu.edu/it/" target="_blank">GVSU Information Technology</a> – Allendale, Michigan, United States
+        </div>
+        <ul style="margin-top: 5px; margin-bottom: 15px;">
+          <li>Provided technical support to over 3,000 university staff and faculty</li>
+          <li>Installed and maintained computing equipment and resolved hardware/software issues</li>
+          <li>Collaborated in team-based scheduling and resolution of multiple support requests</li>
+        </ul>
+      
+        <!-- Parque Náutico de Castrelo -->
+        <div style="margin-bottom: 0;">
+          <strong>Software Developer</strong><br>
+          <em>May 2023 – November 2023</em><br>
+          <a href="https://nauticodecastrelo.com/#" target="_blank">Parque Náutico de Castrelo</a> – Ourense, Spain
+        </div>
+        <ul style="margin-top: 5px; margin-bottom: 15px;">
+          <li>Developed a Python-based meteorological application during my <a href="https://www.gvsu.edu/catalog/course/itc-100.htm" target="_blank">Intercultural Communication & Service Learning</a> Spain Study Abroad program</li>
+          <li>Automated generation of weather databases and environmental visualizations for real-world sustainability projects</li>
+          <li>Implemented a multilingual tool (English, Spanish, Galician) with both a Command Line Interface (CLI) and Graphical User Interface (GUI), packaged as a standalone executable</li>
+          <li>Improved data processing speed by over 200,000%</li>
+          <li>Collaborated with an international team in-person in Spain and remotely from the United States</li>
+        </ul>
+      </section>
+      
+    <!-- 
+      ===========================
+      Projects Section
+      ===========================
+    -->
     <section>
+      <a id="projects" class="scroll-target"></a>
       <h2>Projects</h2>
-      <div style="display: flex; justify-content: center; gap: 20px; align-items: center; margin-bottom: 10px;">
-        <div style="text-align: center;">
-          <iframe width="400" height="225" src="https://www.youtube.com/embed/Ia36xMikhFI" 
+      <!-- 
+        Project Videos: Spot Micro Robot Demonstrations
+      -->
+      <div class="video-container">
+        <div class="video-block">
+          <iframe src="https://www.youtube.com/embed/Ia36xMikhFI" 
             title="Spot Micro Motion Demo" frameborder="0" allowfullscreen>
           </iframe>
-          <p style="font-size: 1.1rem; font-weight: bold; margin-top: 5px;">Spot Micro - Remote Control Movement Demonstration</p>
+          <p class="video-caption">Spot Micro - Remote Control Movement Demonstration</p>
         </div>
-        
-        <div style="text-align: center;">
-          <iframe width="400" height="225" src="https://www.youtube.com/embed/PsGRDcfPXAw" 
+      
+        <div class="video-block">
+          <iframe src="https://www.youtube.com/embed/PsGRDcfPXAw" 
             title="Spot Micro ROM Demo" frameborder="0" allowfullscreen>
           </iframe>
-          <p style="font-size: 1.1rem; font-weight: bold; margin-top: 5px;">Spot Micro - Robot Operating Mode (ROM) Testing</p>
+          <p class="video-caption">Spot Micro - Robot Operating Mode (ROM) Testing</p>
         </div>
       </div>
-      
+
+      <!-- 
+        Project List
+        Each <li> below is a separate project, with images, descriptions, and links.
+      -->
       <ul>
-        <li>
-          <strong>1. Identifying Evolvability-Enhancing Mutations via Computational Models</strong><br>
-          <em>October 2024 - Present (expected: April 2025)</em>
+        <!-- Project 1: Evolvability-Enhancing Mutations -->
+        <li class="project-item">
+          <span class="project-title">1. Identifying Evolvability-Enhancing Mutations via Computational Models</span>
+          <em>October 2024 – Present (expected: May 2025)</em>
+          <div style="margin-top: 10px;"></div>
+
+          <!-- Project Poster Image -->
+          <div style="text-align: center; margin-bottom: 20px;">
+            <img src="Media/Marcos_Sanson_GVSU_Student_Scholars_Day_Evolvability_Poster.png" alt="Evolvability Research Poster" style="max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);">
+            <p style="font-style: italic; font-size: 0.95rem; color: #555; margin-top: 5px;">
+              Research poster presented at <a href="https://www.gvsu.edu/ours/ssd/" target="_blank">GVSU Student Scholars Day</a>
+            </p>
+          </div>
+
           <ul style="margin-top: 8px; margin-bottom: 8px;">
-            <li><strong>Overview:</strong> Traditional biological evolution experiments take months, years, or even decades to complete, but computational models allow us to study thousands of generations per minute. With this capability, I am researching how certain mutations improve evolvability using NK landscapes, a mathematical model of fitness landscapes. 
-            </li>
+            <li><strong>Overview:</strong> Traditional biological evolution experiments take months, years, or even decades to complete, but computational models allow us to study thousands of generations per minute. With this capability, I am researching how certain mutations improve evolvability using NK landscapes, a mathematical model of fitness landscapes.</li>
             <li><strong>Key Activities:</strong>
               <ul>
                 <li>Designing computational experiments to analyze fitness data</li>
                 <li>Testing various evolvability metrics to quantify adaptability</li>
-                <li>Running large-scale simulations on Grand Valley State University’s high-performance computing cluster</li>
+                <li>Running large-scale simulations on Grand Valley State University's high-performance computing cluster</li>
                 <li>Comparing fitness landscapes with and without specific mutations to identify trends in evolvability</li>
               </ul>
             </li>
             <li><strong>Impact:</strong> Identifying patterns that reveal how specific mutations enhance a population’s ability to adapt over time, contributing to a deeper understanding of evolvability in biological and artificial systems</li>
-            <li><strong>Mentor:</strong> Dr. Austin Ferguson, Assistant Professor, College of Computing, Grand Valley State University</li>
+            <li><strong>Mentor:</strong> Dr. Austin Ferguson, Assistant Professor, <a href="https://www.gvsu.edu/computing/" target="_blank">College of Computing, Grand Valley State University</a></li>
             <li><strong>GitHub Repository:</strong> <a href="https://github.com/FergusonAJ/quantifying_evolvability" target="_blank">https://github.com/FergusonAJ/quantifying_evolvability</a></li>
+            <li><strong>Acknowledgments:</strong> Supported by the <a href="https://www.gvsu.edu/ours/kindschi-fellowship-860.htm" target="_blank">Kindschi Undergraduate Research Fellowship</a> (Winter 2025)</li>
           </ul>
         </li>
-        <li>
-          <strong>2. Automatic Atrium Segmentation via Machine Learning</strong><br>
-          <em>September 2024 - December 2024</em>
+        
+        <!-- Project 2: Automatic Atrium Segmentation -->
+        <li class="project-item">
+          <span class="project-title">2. Automatic Atrium Segmentation via Machine Learning</span>
+          <em>September 2024 – December 2024</em>
+          <div style="margin-top: 10px;"></div>
+        
+          <!-- Project Poster Image -->
+          <div style="text-align: center; margin-bottom: 20px;">
+            <img src="https://github.com/officialconfuzius/cardiologyml/raw/main/docs/Automatic_Atrium_Segmentation_Poster_Image.png" alt="Atrium Segmentation Research Poster" style="max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);">
+            <p style="font-style: italic; font-size: 0.95rem; color: #555; margin-top: 5px;">
+              Research poster summarizing the final results of the atrial segmentation project. View full version on 
+              <a href="https://github.com/officialconfuzius/cardiologyml/blob/main/docs/Automatic_Atrium_Segmentation_Poster_Image.png" target="_blank">GitHub</a>.
+            </p>
+          </div>
+        
           <ul style="margin-top: 8px; margin-bottom: 8px;">
             <li><strong>Overview:</strong> Traditional manual segmentation of atrial structures (regions of the heart) in medical imaging is time-consuming and varies between observers. Using machine learning, I developed a model for automatic 3D segmentation of the atrium to improve accuracy and efficiency in cardiac image analysis.</li>
             <li><strong>Key Activities:</strong>
@@ -306,13 +885,24 @@
             </li>
             <li><strong>GitHub Repository:</strong> <a href="https://github.com/officialconfuzius/cardiologyml" target="_blank">https://github.com/officialconfuzius/cardiologyml</a></li>
           </ul>
-        </li>        
+        </li>
         
-        <li>
-          <strong>3. Exploiting Phylogenetic Analysis to Improve Evolutionary Search Algorithms</strong><br>
-          <em>September 2023 - July 2024</em>
+        <!-- Project 3: Phylogenetic Analysis for Evolutionary Search -->
+        <li class="project-item">
+          <span class="project-title">3. Phylogenetic Analysis for Evolutionary Search Algorithms</span>
+          <em>September 2023 – July 2024</em>
+          <div style="margin-top: 10px;"></div>
+        
+          <!-- Project Poster Image -->
+          <div style="text-align: center; margin-bottom: 20px;">
+            <img src="Media/Marcos_Sanson_GECCO_2024_Poster.png" alt="GECCO 2024 Research Poster" style="max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);">
+            <p style="font-style: italic; font-size: 0.95rem; color: #555; margin-top: 5px;">
+              Poster presented at the <a href="https://gecco-2024.sigevo.org/" target="_blank">2024 Genetic and Evolutionary Computation Conference (GECCO)</a>
+            </p>
+          </div>
+        
           <ul style="margin-top: 8px; margin-bottom: 8px;">
-            <li><strong>Overview:</strong> I collaborated with Dr. Alexander Lalejini to enhance evolutionary search algorithms using phylogenetic analysis. We improved optimized problem-solving by integrating evolutionary biology insights into computational methods.</li>
+            <li><strong>Overview:</strong> I collaborated with Dr. Alexander Lalejini to enhance evolutionary search algorithms using phylogenetic analysis. We improved optimized problem-solving by integrating evolutionary biology concepts into computational methods.</li>
             <li><strong>Key Activities:</strong>
               <ul>
                 <li>Designed and executed experiments on a high-performance computing cluster</li>
@@ -322,17 +912,30 @@
               </ul>
             </li>
             <li><strong>Impact:</strong> Our work demonstrated that incorporating phylogenetic analysis into evolutionary search algorithms can significantly enhance their efficiency and effectiveness in solving complex optimization problems.</li>
-            <li><strong>Mentor:</strong> Dr. Alexander Lalejini, Assistant Professor, College of Computing, Grand Valley State University</li>
+            <li><strong>Mentor:</strong> Dr. Alexander Lalejini, Assistant Professor, <a href="https://www.gvsu.edu/computing/" target="_blank">College of Computing</a>, <a href="https://www.gvsu.edu/" target="_blank">Grand Valley State University</a></li>
             <li><strong>Publication:</strong> <a href="https://dl.acm.org/doi/10.1145/3638530.3654208" target="_blank">Runtime phylogenetic analysis enables extreme subsampling for test-based problems</a></li>
             <li><strong>GitHub Repository:</strong> <a href="https://github.com/amlalejini/phylogeny-informed-subsampling" target="_blank">https://github.com/amlalejini/phylogeny-informed-subsampling</a></li>
+            <li><strong>Acknowledgments:</strong> Supported by the <a href="https://www.gvsu.edu/ours/kindschi-fellowship-860.htm" target="_blank">Kindschi Undergraduate Research Fellowship</a> (Winter 2024)</li>
           </ul>
-        </li>
+        </li>        
         
-        <li>
-          <strong>4. Procedurally-generated 2D Role-playing Game</strong><br>
-          <em>January 2024 - April 2024</em>
+        <!-- Project 4: Procedural RPG -->
+        <li class="project-item">
+          <span class="project-title">4. Procedurally-generated 2D Role-playing Game</span>
+          <em>January 2024 – April 2024</em>
+          <div style="margin-top: 10px;"></div>
+        
+          <!-- Project Screenshot -->
+          <div style="text-align: center; margin-bottom: 20px;">
+            <img src="https://github.com/Marcos-Sanson/Procedural-RPG/raw/main/Documentation/Screenshots/screenshot1.png" alt="Procedural RPG Screenshot" style="max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);">
+            <p style="font-style: italic; font-size: 0.95rem; color: #555; margin-top: 5px;">
+              Screenshot from final game build. View on 
+              <a href="https://github.com/Marcos-Sanson/Procedural-RPG/blob/main/Documentation/Screenshots/screenshot1.png" target="_blank">GitHub</a>.
+            </p>
+          </div>
+        
           <ul style="margin-top: 8px; margin-bottom: 8px;">
-            <li><strong>Overview:</strong> In a software engineering course, I collaborated with a team to develop a 2D role-playing game featuring procedurally generated content. Our goal was to enhance replayability and player engagement by ensuring unique gameplay experiences with each session.</li>
+            <li><strong>Overview:</strong> In a <a href="https://www.gvsu.edu/catalog/course/cis-350.htm" target="_blank">software engineering course (CIS 350)</a>, I collaborated with a team to develop a 2D role-playing game featuring procedurally generated content. Our goal was to enhance replayability and player engagement by ensuring unique gameplay experiences with each session.</li>
             <li><strong>Key Activities:</strong>
               <ul>
                 <li>Designed core game mechanics, including character progression and combat systems</li>
@@ -345,11 +948,23 @@
           </ul>
         </li>
         
-        <li>
-          <strong>5. Meteorological Software Application</strong><br>
-          <em>May 2023 - November 2023</em>
+        <!-- Project 5: Meteorological Software Application -->
+        <li class="project-item">
+          <span class="project-title">5. Meteorological Software Application</span>
+          <em>May 2023 – November 2023</em>
+          <div style="margin-top: 10px;"></div>
+        
+          <!-- Project GUI Example -->
+          <div style="text-align: center; margin-bottom: 20px;">
+            <img src="https://github.com/Marcos-Sanson/MeteoGalicia-Application/raw/main/Example_Data/GUI_Example_1.png" alt="MeteoGalicia Software GUI Example" style="max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);">
+            <p style="font-style: italic; font-size: 0.95rem; color: #555; margin-top: 5px;">
+              Example GUI from the final application build. View full screenshot on 
+              <a href="https://github.com/Marcos-Sanson/MeteoGalicia-Application/blob/main/Example_Data/GUI_Example_1.png" target="_blank">GitHub</a>.
+            </p>
+          </div>
+        
           <ul style="margin-top: 8px; margin-bottom: 8px;">
-            <li><strong>Overview:</strong> During my internship at Parque Náutico de Castrelo in Spain, I developed a Python-based application to automate the creation of weather databases and real-time data visualization. This project aimed to improve environmental monitoring and support projects like tree planting and erosion management.</li>
+            <li><strong>Overview:</strong> During my study abroad work at Parque Náutico de Castrelo in Spain, I developed a Python-based application to automate the creation of weather databases and real-time data visualization. This project aimed to improve environmental monitoring and support projects like tree planting and erosion management.</li>
             <li><strong>Key Activities:</strong>
               <ul>
                 <li>Developed data pipelines to automate the processing of multilingual datasets</li>
@@ -360,11 +975,22 @@
             <li><strong>Impact:</strong> Improved weather data processing speeds by over 200,000%, significantly increasing the efficiency of environmental and meteorological monitoring.</li>
             <li><strong>GitHub Repository:</strong> <a href="https://github.com/Marcos-Sanson/MeteoGalicia-Application" target="_blank">https://github.com/Marcos-Sanson/MeteoGalicia-Application</a></li>
           </ul>
-        </li>
+        </li>        
         
-        <li>
-          <strong>6. Integrated Machine Learning for Robot Control</strong><br>
-          <em>October 2022 - September 2023</em>
+        <!-- Project 6: Integrated ML for Robot Control -->
+        <li class="project-item">
+          <span class="project-title">6. Integrated Machine Learning for Robot Control</span>
+          <em>October 2022 – September 2023</em>
+          <div style="margin-top: 10px;"></div>
+        
+          <!-- Seminar Presentation Image -->
+          <div style="text-align: center; margin-bottom: 20px;">
+            <img src="https://www.gvsu.edu/cms4/asset/EBA4670D-9F96-C623-66F4C4600C19AF54/module/F6F5F1DE-0414-D788-E1389DDEDBC8E34A/311C73EA-A41D-37E2-8B496D60D02367A5[1707763709].jpg" alt="Computing Seminar Presentation on Genetic Algorithms" style="max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);">
+            <p style="font-style: italic; font-size: 0.95rem; color: #555; margin-top: 5px;">
+              Dr. Jared Moore presenting on genetic algorithms and evolutionary robotics during the <a href="https://www.gvsu.edu/computing/module-news-view.htm?storyId=311C73EA-A41D-37E2-8B496D60D02367A5&siteModuleId=F6F5F1DE-0414-D788-E1389DDEDBC8E34A" target="_blank">GVSU Computing Seminar Series</a>
+            </p>
+          </div>
+        
           <ul style="margin-top: 8px; margin-bottom: 8px;">
             <li><strong>Overview:</strong> I collaborated with Dr. Jared Moore at Grand Valley State University to integrate machine learning and evolutionary algorithms for controlling a digital quadruped robot. Our goal was to enhance the robot's gait and control efficiency.</li>
             <li><strong>Key Activities:</strong>
@@ -378,11 +1004,22 @@
             <li><strong>Impact:</strong> Improved the efficiency and adaptability of quadruped robot control systems, contributing to advancements in evolutionary robotics.</li>
             <li><strong>Mentor:</strong> Dr. Jared Moore, Associate Dean of Undergraduate Studies & Outreach, Grand Valley State University</li>
           </ul>
-        </li>        
+        </li>
 
-        <li>
-          <strong>7. Spot Micro Agile Robot Dog</strong><br>
-          <em>October 2021 - May 2022</em>
+        <!-- Project 7: Spot Micro Agile Robot Dog -->
+        <li class="project-item">
+          <span class="project-title">7. Spot Micro Agile Robot Dog</span>
+          <em>October 2021 – May 2022</em>
+          <div style="margin-top: 10px;"></div>
+        
+          <!-- Project Photo -->
+          <div style="text-align: center; margin-bottom: 20px;">
+            <img src="Media/Marcos_Sanson_Ronit_Nagarapu_Spot_Micro_Robot.jpg" alt="Marcos Sanson and Ronit Nagarapu with Spot Micro Robot" style="max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);">
+            <p style="font-style: italic; font-size: 0.95rem; color: #555; margin-top: 5px;">
+              My project partner, Ronit Nagarapu, and I with the completed Spot Micro Robot Dog
+            </p>
+          </div>
+        
           <ul style="margin-top: 8px; margin-bottom: 8px;">
             <li><strong>Overview:</strong> Working with another student, I developed a fully operational robot inspired by Boston Dynamics' Spot agile mobile robot. Our goal was to create a cost-effective, functional quadruped robot for both disaster relief and research purposes.</li>
             <li><strong>Key Activities:</strong>
@@ -398,24 +1035,74 @@
           </ul>
         </li>
         
+        
       </ul>
     </section>
   </main>
 
+  <!-- 
+    ===========================
+    Featured Articles Section
+    ===========================
+  -->
   <section class="articles-section">
+    <a id="articles" class="scroll-target"></a>
     <h2>Featured Articles</h2>
     <ul>
+      <!-- 
+        Each <li> below is a featured article with title, date, summary, and link.
+        Add new articles at the top for reverse chronological order.
+      -->
+      <!-- May 8, 2025 -->
+      <li>
+        <a href="https://www.gvsu.edu/gvnext/2025/lakers-recognized-nationally-for-academic-excellence-global-engagement.htm" target="_blank" style="color: #333; text-decoration: none;">
+          <strong class="article-title">Lakers Recognized Nationally for Academic Excellence, Global Engagement</strong>
+        </a>
+        <em class="article-date" style="display: block; margin-top: -5px; margin-bottom: 8px;">May 8, 2025</em>
+        <div class="article-content">
+          This GVNext article highlights GVSU students who earned prestigious national scholarships and fellowships. I was featured as one of only five GVSU students since 2019 to receive the Barry Goldwater Scholarship, the top award in the U.S. for undergraduates pursuing research careers in STEM. The article also mentions my research in evolutionary computation to improve the adaptability of complex systems.
+        </div>
+        <a href="https://www.gvsu.edu/gvnext/2025/lakers-recognized-nationally-for-academic-excellence-global-engagement.htm" target="_blank">Read More</a>
+      </li>
+  
+      <!-- April 24, 2025 -->
+      <li>
+        <a href="https://www.gvsu.edu/computing/module-news-view.htm?storyId=1A4B5A36-903F-27C0-0D21535F64B3746F&siteModuleId=F6F5F1DE-0414-D788-E1389DDEDBC8E34A" target="_blank" style="color: #333; text-decoration: none;">
+          <strong class="article-title">Computer Science Student Marcos Sanson Awarded with Prestigious Goldwater Scholarship</strong>
+        </a>
+        <em class="article-date" style="display: block; margin-top: -5px; margin-bottom: 8px;">April 24, 2025</em>
+        <div class="article-content">
+          I was awarded the Barry Goldwater Scholarship, one of the most prestigious national scholarships for undergraduates in STEM. I was one of 14 students selected from Michigan in 2025 and among just a few chosen from over 5,000 applicants nationwide. The article shares insights from my research mentors and highlights how this scholarship connects me with a national community of scholars and researchers. It also mentions my internship with the Air Force Research Laboratory and my future plans to pursue a Ph.D. in computer science.
+        </div>
+        <a href="https://www.gvsu.edu/computing/module-news-view.htm?storyId=1A4B5A36-903F-27C0-0D21535F64B3746F&siteModuleId=F6F5F1DE-0414-D788-E1389DDEDBC8E34A" target="_blank">Read More</a>
+      </li>
+  
+      <!-- March 8, 2025 -->
+      <li>
+        <a href="https://www.gvsu.edu/studentsenate/meet-the-candidates-158.htm?recordId_2=0B6E68D7-BB0D-4A38-8F53D5422AF3725E#062115D7-EBA8-3F63-3FDDB53281F0CED7" target="_blank" style="color: #333; text-decoration: none;">
+          <strong class="article-title">GVSU Student Senate - Meet the Candidates: Marcos Sanson</strong>
+        </a>
+        <em class="article-date" style="display: block; margin-top: -5px; margin-bottom: 8px;">March 8, 2025</em>
+        <div class="article-content">
+          I was featured on the official GVSU Student Senate election page as a candidate for the College of Computing. I ran to improve campus support systems, expand opportunities for research and internships, and strengthen student-faculty connections. I was successfully elected as a general senator for the 2025–2026 school year, although I had to step down due to schedule conflicts, and passed my seat to the next elected candidate.
+        </div>
+        <a href="https://www.gvsu.edu/studentsenate/meet-the-candidates-158.htm?recordId_2=0B6E68D7-BB0D-4A38-8F53D5422AF3725E#062115D7-EBA8-3F63-3FDDB53281F0CED7" target="_blank">Read More</a>
+      </li>
+  
+      <!-- February 27, 2025 -->
       <li>
         <a href="https://www.linkedin.com/pulse/preparing-michigans-tech-talent-pipeline-qkm8e/" target="_blank" style="color: #333; text-decoration: none;">
           <strong class="article-title">Preparing Michigan's Tech Talent Pipeline</strong>
         </a>
         <em class="article-date" style="display: block; margin-top: -5px; margin-bottom: 8px;">February 27, 2025</em>
         <div class="article-content">
-            I was featured in this LinkedIn article about GVSU's new artificial intelligence and software engineering degree programs, which shows the university's efforts to strengthen Michigan's tech talent pipeline. We presented to the GVSU Board of Trustees before they approved these programs in February 2025. It also discusses GVSU's collaboration with industry leaders to develop curriculum that prepares students for the evolving tech sector.
+          I was featured in this LinkedIn article about GVSU's new artificial intelligence and software engineering degree programs, which shows the university's efforts to strengthen Michigan's tech talent pipeline. We presented to the GVSU Board of Trustees before they approved these programs in February 2025. It also discusses GVSU's collaboration with industry leaders to develop curriculum that prepares students for the evolving tech sector.
         </div>
         <a href="https://www.linkedin.com/pulse/preparing-michigans-tech-talent-pipeline-qkm8e/" target="_blank">Read More</a>
-            </li>
-            <li>
+      </li>
+  
+      <!-- February 21, 2025 -->
+      <li>
         <a href="https://www.gvsu.edu/computing/module-news-view.htm?storyId=9EE167E4-DE22-D7DB-86DBE32C3EF75250&siteModuleId=F6F5F1DE-0414-D788-E1389DDEDBC8E34A" target="_blank" style="color: #333; text-decoration: none;">
           <strong class="article-title">GVSU Board of Trustees Approves New Programs in AI and Software Engineering</strong>
         </a>
@@ -424,17 +1111,22 @@
           I presented alongside GVSU College of Computing Dean Marouane Kessentini and fellow student Natalie Kline to the GVSU Board of Trustees, sharing my experiences as a student and undergraduate researcher. We successfully secured the approval of new degree programs in artificial intelligence and software engineering to better support the university's and students' needs.
         </div>
         <a href="https://www.gvsu.edu/computing/module-news-view.htm?storyId=9EE167E4-DE22-D7DB-86DBE32C3EF75250&siteModuleId=F6F5F1DE-0414-D788-E1389DDEDBC8E34A" target="_blank">Read More</a>
-      </li>      
+      </li>
+  
+      <!-- December 3, 2024 -->
       <li>
         <a href="https://www.gvsu.edu/computing/module-news-view.htm?storyId=8A466C68-FDA2-0B5B-201E0E2A15F9EFCC&siteModuleId=313814A9-D6D9-8FAC-FFD1FBE83D65E08C" target="_blank" style="color: #333; text-decoration: none;">
-          <strong class="article-title">Student Spotlight: Marcos Sanson</strong>
+          <strong class="article-title">Computer Science Student Marcos Sanson Reflects on his Time at GVSU and Looks in to the Future
+          </strong>
         </a>
         <em class="article-date" style="display: block; margin-top: -5px; margin-bottom: 8px;">December 3, 2024</em>
         <div class="article-content">
-          I was interviewed and highlighted by the GVSU College of Computing. This article discusses my journey, including my robotic dog project, study abroad experiences, and contributions to research.
+          I was interviewed and highlighted by the GVSU College of Computing through a Student Spotlight. This article discusses my journey, including my robotic dog project, study abroad experiences, and contributions to research.
         </div>
         <a href="https://www.gvsu.edu/computing/module-news-view.htm?storyId=8A466C68-FDA2-0B5B-201E0E2A15F9EFCC&siteModuleId=313814A9-D6D9-8FAC-FFD1FBE83D65E08C" target="_blank">Read More</a>
       </li>
+  
+      <!-- March 11, 2024 -->
       <li>
         <a href="https://lanthorn.com/104123/laker_life/gv-computing-club-focuses-on-networking-growing-careers/" target="_blank" style="color: #333; text-decoration: none;">
           <strong class="article-title">GV Computing Club Focuses on Networking, Growing Careers</strong>
@@ -448,9 +1140,76 @@
     </ul>
   </section>
 
+  <!-- 
+    ===========================
+    Scholarships Section
+    ===========================
+  -->
+  <section class="articles-section">
+    <a id="scholarships" class="scroll-target"></a>
+    <h2>Scholarships</h2>
+    <ul style="margin-top: 10px; margin-bottom: 20px; list-style-type: disc; padding-left: 1.5rem;">
+      <!-- 
+        Each <li> below is a scholarship with a link and year.
+        Add new scholarships at the top for reverse chronological order.
+      -->
+      <li style="margin-bottom: 8px;">
+        <a href="https://goldwaterscholarship.gov/" target="_blank" style="color: inherit; text-decoration: none;">
+          Barry Goldwater Scholarship</a> <em>(2025)</em>
+      </li>
+      <li style="margin-bottom: 8px;">
+        <a href="https://www.gvsu.edu/computing/scholarships-39.htm" target="_blank" style="color: inherit; text-decoration: none;">
+          Eric Maino Community Technology Award</a> <em>(2025)</em>
+      </li>
+      <li style="margin-bottom: 8px;">
+        <a href="https://www.gvsu.edu/math/scholarships-and-awards-9.htm" target="_blank" style="color: inherit; text-decoration: none;">
+          The Donald and Barbara VanderJagt Scholarship</a> <em>(2025)</em>
+      </li>
+      <li style="margin-bottom: 8px;">
+        <a href="https://shpe.org/avail-scholarships/northrop-grumman-scholarship/" target="_blank" style="color: inherit; text-decoration: none;">
+          Society of Hispanic Professional Engineers Northrop Grumman Scholarship</a> <em>(2024)</em>
+      </li>
+      <li style="margin-bottom: 8px;">
+        <a href="https://www.gvsu.edu/computing/scholarships-39.htm" target="_blank" style="color: inherit; text-decoration: none;">
+          GVSU School of Computing Study Abroad Scholarship</a> <em>(2024)</em>
+      </li>
+      <li style="margin-bottom: 8px;">
+        <a href="https://www.gvsu.edu/computing/scholarships-39.htm" target="_blank" style="color: inherit; text-decoration: none;">
+          GVSU School of Computing Academic Scholarship</a> <em>(2024)</em>
+      </li>
+      <li style="margin-bottom: 8px;">
+        <a href="https://www.gvsu.edu/scholarships/scholarship-details.htm?scholarshipId=47BA682F-B3FD-0AB3-03ED58B4AF1E683E" target="_blank" style="color: inherit; text-decoration: none;">
+          Berthold Price Memorial Scholarship</a> <em>(2024)</em>
+      </li>
+      <li style="margin-bottom: 8px;">
+        <a href="https://www.gvsu.edu/financialaid/scholarships-157.htm" target="_blank" style="color: inherit; text-decoration: none;">
+          GVSU Fraternity & Sorority Laker Leaders Scholarship</a> <em>(2024)</em>
+      </li>
+      <li style="margin-bottom: 8px;">
+        <a href="https://www.gvsu.edu/pce/advising/scholarship-opportunities-131.htm" target="_blank" style="color: inherit; text-decoration: none;">
+          Kyle Grant '12 Memorial Scholarship</a> <em>(2024)</em>
+      </li>
+      <li style="margin-bottom: 8px;">
+        <a href="https://www.gvsu.edu/sustainability/scholarships-funding-231.htm" target="_blank" style="color: inherit; text-decoration: none;">
+          Nichols Sustainability Scholarship</a> <em>(2024)</em>
+      </li>
+      <li style="margin-bottom: 8px;">
+        <a href="https://www.gvsu.edu/financialaid/incoming-freshman-merit-scholarships-2025-2026-259.htm" target="_blank" style="color: inherit; text-decoration: none;">
+          GVSU Presidential Scholarship</a> <em>(2022)</em>
+      </li>
+    </ul>
+  </section>
+  
+  <!-- 
+    ===========================
+    Contact Section
+    ===========================
+  -->
   <section class="contact-section">
+    <a id="contact" class="scroll-target"></a>
     <h2>Connect with Me!</h2>
     <div class="contact-links">
+      <!-- Social and email links -->
       <a href="https://www.linkedin.com/in/marcos-sanson/" target="_blank">
         <strong>LinkedIn</strong>
       </a>
@@ -463,9 +1222,32 @@
     </div>
   </section>
   
-
+  <!-- 
+    ===========================
+    Footer Section
+    ===========================
+  -->
   <footer>
     <p>© 2024 Marcos Sanson | <a href="https://github.com/Marcos-Sanson">GitHub</a></p>
+    <p>Last updated: May 2025</p>
+    <p style="font-size: 0.85rem;">
+      Logo icon by <a href="https://www.freepik.com/icon/letter-m_9687384" target="_blank">Freepik</a>
+    </p>    
   </footer>
+
+  <button id="darkModeToggle" onclick="toggleDarkMode()"></button>
+  <script>
+    // Enable saved theme on load
+    if (localStorage.getItem('theme') === 'dark') {
+      document.body.classList.add('dark-mode');
+    }
+
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+      const theme = document.body.classList.contains('dark-mode') ? 'dark' : 'light';
+      localStorage.setItem('theme', theme);
+    }
+  </script>
+
 </body>
 </html>
