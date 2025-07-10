@@ -97,7 +97,7 @@ I built a low-cost quadruped robot modeled after Boston Dynamics’ Spot. I deve
 
 - **Current Work:** Artificial intelligence for spacecraft control ([Air Force Research Laboratory (AFRL) Scholars Program](https://afrlscholars.usra.edu/), Summer 2025 Internship)  
 - **[Goldwater Scholar](https://goldwaterscholarship.gov/) (2025):** One of 441 students nationally recognized in 2025 for research potential in STEM  
-- **[McNair Scholar](https://www.ed.gov/grants-and-programs/grants-higher-education/trio/trio--ronald-e-mcnair-postbaccalaureate-achievement-program--home-page):** Preparing for graduate studies in Computer Science  
+- **[McNair Scholar](https://www.ed.gov/grants-and-programs/grants-higher-education/trio/trio--ronald-e-mcnair-postbaccalaureate-achievement-program--home-page):** Selected for the prestigious McNair Scholars Program, which supports first-generation and underrepresented students in preparing for graduate studies.
 - **[Kindschi Undergraduate Research Fellow](https://www.gvsu.edu/ours/kindschi-fellowship-860.htm):** Awarded twice for two Computer Science research projects  
 - **Study Abroad:** Completed two study abroad programs in [Madrid](https://www.uc3m.es/) and [Ourense, Spain](https://www.gvsu.edu/studyabroad/)
 
@@ -113,5 +113,4 @@ I built a low-cost quadruped robot modeled after Boston Dynamics’ Spot. I deve
 ---
 
 > Built using HTML, CSS, and hosted on GitHub Pages.  
-> Last updated: **May 2025**
-
+> Last updated: **July 2025**
