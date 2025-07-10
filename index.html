@@ -629,11 +629,16 @@
               fallbackLink.style.display = 'none';
             });
 
-            // If iframe doesn't load after 3 seconds, show fallback
+            // If iframe doesn't load, show fallback
+            let iframeLoaded = false;
+
+            iframe.addEventListener('load', function() {
+              iframeLoaded = true;
+              fallbackLink.style.display = 'none';
+            });
+
             setTimeout(function() {
-              // If iframe didn't trigger load event, assume failure
-              // Some browsers block embeds without firing onerror
-              if (!iframe.contentDocument && !fallbackShown) {
+              if (!iframeLoaded && !fallbackShown) {
                 iframe.style.display = 'none';
                 fallbackLink.style.display = 'block';
                 fallbackShown = true;
