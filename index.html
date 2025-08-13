@@ -16,7 +16,7 @@
     Marcos Sanson - Personal Website
     index.html
     This file contains the main structure and content for Marcos Sanson's personal website.
-    It includes sections for About, Recent Posts, Education, Work Experience, Projects, Publications, Featured Articles, Scholarships, and Contact.
+    It includes sections for About, Recent Posts, Education, Work Experience, Projects, Publications, Featured Articles, Scholarships, and Contact information.
     All styles are included in the <style> tag for simplicity.
   -->
   <meta charset="UTF-8">
@@ -131,14 +131,6 @@
       top: 0;
       z-index: 1000;
     }
-
-    /* Hide navbar on smaller screens */
-    @media (max-width: 768px) {
-      nav.navbar {
-        display: none;
-      }
-    }
-
 
     /*
       ===========================
@@ -458,8 +450,8 @@
       }
     }
 
-    /* Hide navbar on screens smaller than 768px */
-    @media (max-width: 768px) {
+    /* Hide navbar on screens smaller than 1000px */
+    @media (max-width: 1000px) {
       nav.navbar {
         display: none;
       }
@@ -562,7 +554,7 @@
       <h2>About Me</h2>
       <div class="about-container">
         <!-- Professional headshot image -->
-        <img src="Media/Marcos_Sanson_Headshot_Photo.png" alt="Professional headshot of Marcos Sanson" class="about-image">
+        <img src="Media/Marcos_Sanson_Headshot_Photo_Compressed.png" alt="Professional headshot of Marcos Sanson" class="about-image">
         <div class="about-text">
           <p>
             I am a 4th-year undergraduate computer science student at 
@@ -573,7 +565,7 @@
             My academic and professional journey has taken me across the United States and internationally, including two separate study abroad experiences in Spain.
           </p>
           <p>
-            In addition to pursuing a degree in computer science at Grand Valley State University, I am also an undergraduate researcher studying artificial intelligence (AI), machine learning (ML), and evolutionary computation (EC).
+            In addition to being a student at Grand Valley State University, I am also an undergraduate researcher studying artificial intelligence (AI), machine learning (ML), and evolutionary computation (EC).
           </p>
           <p>
             My current research focuses on designing and optimizing computational models, evolutionary algorithms, and machine learning techniques to solve complex problems.
@@ -666,24 +658,42 @@
       </h3>
       <p style="margin-top: 0; margin-bottom: 0.2rem;"><em>Allendale, Michigan, United States</em></p>
       <p style="margin: 0 0 1rem 0;">
-        <strong>Bachelor of Science in Computer Science</strong>, Minors in Mathematics and Cybersecurity  
-        (<em>expected May 2026</em>)  
-        <br><strong>GPA:</strong> 3.913/4.000
+        <strong>
+          <a href="https://www.gvsu.edu/academics/computer-science-bs.htm" target="_blank" style="color: inherit; text-decoration: none;">
+            Bachelor of Science in Computer Science
+          </a>
+        </strong>
+        (<em>August 2022 - May 2026 [Expected]</em>)  
+        <br><strong>Minors:</strong> 
+        <a href="https://www.gvsu.edu/academics/mathematics-minor.htm" target="_blank" style="color: inherit; text-decoration: none;">
+            Mathematics</a>,
+        </a>
+        <a href="https://www.gvsu.edu/academics/cybersecurity-minor.htm" target="_blank" style="color: inherit; text-decoration: none;">
+          Cybersecurity
+        </a>  
+        <br><strong>Certificates:</strong> 
+        <a href="https://www.gvsu.edu/academics/leadership-undergraduate-certificate.htm" target="_blank" style="color: inherit; text-decoration: none;">
+          Leadership Undergraduate Certificate
+        </a>
+        <br><strong>GPA:</strong> 3.913/4.000  
       </p>
 
       <p style="margin-bottom: 0;"><strong>Honors and Awards:</strong></p>
       <ul style="margin-top: 0; margin-bottom: 10px;">
         <li>
-            <a href="https://goldwaterscholarship.gov/" target="_blank">Barry Goldwater Scholar</a> (2025)
+            <a href="https://goldwaterscholarship.gov/" target="_blank">Barry Goldwater Scholar</a> (<em>2025</em>)
         </li>
         <li>
-          <a href="https://www.gvsu.edu/ours/mcnair/" target="_blank">Ronald E. McNair Post-Baccalaureate Achievement Program Scholar</a>
+          <a href="https://www.gvsu.edu/hc/peter-c-cook-leadership-academy-10.htm" target="_blank">Peter C. Cook Leadership Academy Fellow</a> (<em>2025</em>)
         </li>
         <li>
           <a href="https://www.gvsu.edu/ours/kindschi-fellowship-860.htm" target="_blank">P. Douglas Kindschi Undergraduate Research Fellowship in the Sciences</a> (<em>Winter 2024, Winter 2025</em>)
         </li>
         <li>
-          <a href="https://www.gvsu.edu/advising/deans-list-59.htm" target="_blank">Dean's List</a> (<em>Fall 2022 – Winter 2025</em>)
+          <a href="https://www.gvsu.edu/advising/deans-list-59.htm" target="_blank">Dean's List</a> (<em>Fall 2022 - Winter 2025</em>)
+        </li>
+        <li>
+          <a href="https://www.gvsu.edu/ours/mcnair/" target="_blank">Ronald E. McNair Post-Baccalaureate Achievement Program Scholar</a> (<em>2023</em>)
         </li>
         <li>
           <a href="https://www.hsf.net/" target="_blank">Hispanic Scholarship Fund Scholar</a> (<em>2023, 2024, 2025</em>)
@@ -730,7 +740,7 @@
         <li><a href="https://www.gvsu.edu/catalog/course/bio-120.htm" target="_blank">General Biology I (BIO 120)</a></li>
         <li><a href="https://www.gvsu.edu/catalog/course/com-202.htm" target="_blank">Critical Interpretation (COM 202)</a></li>
         <li><a href="https://www.gvsu.edu/catalog/course/int-310.htm" target="_blank">Creativity and Problem-Solving (INT 310)</a></li>
-        <li><a href="https://www.gvsu.edu/catalog/course/itc-100.htm" target="_blank">Intercultural Communication & Service Learning – Spain Study Abroad (ITC 100)</a></li>
+        <li><a href="https://www.gvsu.edu/catalog/course/itc-100.htm" target="_blank">Intercultural Communication & Service Learning - Spain Study Abroad (ITC 100)</a></li>
       </ul>
 
       <!-- Divider -->
@@ -739,12 +749,12 @@
       <!-- Universidad Carlos III de Madrid -->
       <h3 style="margin-bottom: 0.2rem;">
         <a href="https://www.uc3m.es/soe/home" target="_blank" style="color: inherit; text-decoration: none;">
-          Universidad Carlos III de Madrid (UC3M)
+          Universidad Carlos III de Madrid
         </a>
       </h3>
       <p style="margin-top: 0;"><em>Madrid, Spain</em></p>
       <p style="margin-bottom: 0.6rem;">
-        <strong>Study Abroad Program</strong> (<em>September 2024 – December 2024</em>)  
+        <strong>Study Abroad Program</strong> (<em>September 2024 - December 2024</em>)  
         <br>
         <a href="https://www.uc3m.es/Home" target="_blank">Universidad Carlos III de Madrid (UC3M)</a> is a prestigious Spanish public university recognized for its excellence in research, teaching, and innovation.
         I was admitted to the <a href="https://www.uc3m.es/soe/home" target="_blank">School of Engineering</a> through a semester-long exchange program.
@@ -754,9 +764,9 @@
       
       <p style="margin-bottom: 0;"><strong>Relevant Coursework:</strong></p>
       <ul style="margin-top: 5px; margin-bottom: 10px;">
-        <li><a href="https://aplicaciones.uc3m.es/cpa/generaFicha?asig=16803&est=350&idioma=2&plan=392" target="_blank">Machine Learning in Healthcare</a> (<strong>10/10 – Excellent</strong>)</li>
-        <li><a href="https://aplicaciones.uc3m.es/cpa/generaFicha?asig=13457&est=212&idioma=2&plan=383" target="_blank">Creativity and Innovation</a> (<strong>9.7/10 – Excellent</strong>)</li>
-        <li><a href="https://aplicaciones.uc3m.es/cpa/generaFicha?asig=16507&est=350&idioma=2&plan=392" target="_blank">Web Analytics</a> (<strong>8.5/10 – Very Good</strong>)</li>
+        <li><a href="https://aplicaciones.uc3m.es/cpa/generaFicha?asig=16803&est=350&idioma=2&plan=392" target="_blank">Machine Learning in Healthcare</a> (<strong>10/10 - Excellent</strong>)</li>
+        <li><a href="https://aplicaciones.uc3m.es/cpa/generaFicha?asig=13457&est=212&idioma=2&plan=383" target="_blank">Creativity and Innovation</a> (<strong>9.7/10 - Excellent</strong>)</li>
+        <li><a href="https://aplicaciones.uc3m.es/cpa/generaFicha?asig=16507&est=350&idioma=2&plan=392" target="_blank">Web Analytics</a> (<strong>8.5/10 - Very Good</strong>)</li>
         <li><a href="https://aplicaciones.uc3m.es/cpa/generaFicha?asig=16486&est=350&idioma=2&plan=392" target="_blank">Computer Networks</a></li>
       </ul>
 
@@ -771,30 +781,45 @@
       
         <!-- AFRL Scholars Program -->
         <div style="margin-bottom: 0;">
-          <strong>Research Intern</strong><br>
-          <em>May 2025 – Present</em><br>
-          <a href="https://afrlscholars.usra.edu/" target="_blank">Air Force Research Laboratory Scholars Program</a> – Kirtland Air Force Base, Albuquerque, New Mexico, United States
+          <strong>Artificial Intelligence Intern</strong><br>
+          <em>May 2025 - Present</em><br>
+          <a href="https://www.afrl.af.mil/" target="_blank">Air Force Research Laboratory</a> | <a href="https://www.kirtland.af.mil/" target="_blank">Kirtland Air Force Base</a>, Albuquerque, New Mexico, United States
         </div>
         <ul style="margin-top: 5px; margin-bottom: 15px;">
-          <li>Selected for the nationally competitive AFRL Scholars Program to develop reinforcement learning models for autonomous spacecraft control</li>
-          <li>Contributing to the project <em>Artificial Intelligence Spacecraft Control for Contested Space Applications Using Reinforcement Learning</em></li>
+            <!--
+            <li>Develop and test artificial intelligence (AI) models and reinforcement learning (RL) agents for autonomous spacecraft control in contested space scenarios using software simulation platforms</li>
+            <li>Collaborate with a research team to implement AI methods for satellite control, reducing human workload and achieving a 100% success rate across multiple orbital tasks in support of the <a href="https://www.spaceforce.mil/" target="_blank">United States Space Force (USSF)</a></li>
+            -->
+            <li>
+            Selected for the nationally competitive 
+            <a href="https://afrlscholars.usra.edu/" target="_blank">AFRL Scholars Program</a> 
+            to develop reinforcement learning agents for autonomous spacecraft control
+            </li>
+            <li>Contributing to the project <em>Artificial Intelligence Spacecraft Control for Contested Space Applications Using Reinforcement Learning</em></li>
         </ul>
         
         <!-- GVSU Undergraduate Researcher -->
         <div style="margin-bottom: 0;">
           <strong>Computer Science Undergraduate Researcher</strong><br>
-          <em>October 2022 – Present</em><br>
-          <a href="https://www.gvsu.edu/computing/" target="_blank">Grand Valley State University</a> – Allendale, Michigan, United States
+          <em>October 2022 - May 2025</em><br>
+          <a href="https://www.gvsu.edu/computing/" target="_blank">Grand Valley State University</a> | Allendale, Michigan, United States
         </div>
         <ul style="margin-top: 5px; margin-bottom: 15px;">
-          <li>Collaborate with computer science professors in artificial intelligence (AI), machine learning (ML), and evolutionary computation (EC) research</li>
-          <li>Develop and optimize evolutionary algorithms, utilizing experimental design, high-performance computing, statistical software, and ML frameworks (e.g., PyTorch) to solve complex engineering and computing problems</li>
+          <li>Collaborated with computer science professors in artificial intelligence (AI), machine learning (ML), and evolutionary computation (EC) research</li>
+          <li>
+            Designed and integrated evolutionary algorithms with artificial intelligence and machine learning to solve multi-objective computing problems, achieving statistically significant improvements over previous methods
+            <ul>
+              <li>
+              Optimized algorithms using experimental design, high-performance computing, statistical software, and ML frameworks (e.g., PyTorch)
+              </li>
+            </ul>
+          </li>
           <li>
             Co-authored peer-reviewed paper and presented work at the 
             <a href="https://gecco-2024.sigevo.org/" target="_blank">2024 Genetic and Evolutionary Computation Conference (GECCO-2024)</a>
           </li>
           <li>
-            Awarded two P. Douglas Kindschi Undergraduate Research Fellowships in the Sciences for the following projects:
+            Awarded two <a href="https://www.gvsu.edu/ours/kindschi-fellowship-860.htm" target="_blank">P. Douglas Kindschi Undergraduate Research Fellowships in the Sciences</a> for the following projects:
             <ol style="margin-top: 5px; margin-bottom: 0; padding-left: 1.2em;">
               <li>“Exploiting Phylogenetic Analysis to Improve Evolutionary Search Algorithms” (Winter 2024)</li>
               <li>“Identifying Evolvability-Enhancing Mutations via Computational Models” (Winter 2025)</li>
@@ -805,8 +830,8 @@
         <!-- Gentex Corporation Internship -->
         <div style="margin-bottom: 0;">
           <strong>Embedded Software Engineering Intern</strong><br>
-          <em>May 2024 – August 2024</em><br>
-          <a href="https://www.gentex.com/" target="_blank">Gentex Corporation</a> – Zeeland, Michigan, United States
+          <em>May 2024 - August 2024</em><br>
+          <a href="https://www.gentex.com/" target="_blank">Gentex Corporation</a> | Zeeland, Michigan, United States
         </div>
         <ul style="margin-top: 5px; margin-bottom: 15px;">
           <li>Developed embedded software in C and Ruby for new Gentex products and technology</li>
@@ -818,27 +843,26 @@
         <!-- GVSU IT Support -->
         <div style="margin-bottom: 0;">
           <strong>Desktop Support Student Technician</strong><br>
-          <em>January 2023 – April 2025</em><br>
-          <a href="https://www.gvsu.edu/it/" target="_blank">GVSU Information Technology</a> – Allendale, Michigan, United States
+          <em>January 2023 - April 2025</em><br>
+          <a href="https://www.gvsu.edu/it/" target="_blank">GVSU Information Technology</a> | Allendale, Michigan, United States
         </div>
         <ul style="margin-top: 5px; margin-bottom: 15px;">
-          <li>Provide support for over 3,000 of the university's staff and faculty members</li>
-          <li>Set up new computing equipment and fix a variety of technological issues, including hardware and software problems</li>
-          <li>Manage and schedule plans in a team environment to resolve multiple incidents and tasks</li>
+          <li>Provided IT support for over 3,000 of the university's staff and faculty members</li>
+          <li>Set up new computing equipment and fixed a variety of technological issues, including hardware and software problems</li>
+          <li>Coordinated and scheduled plans in a team environment to resolve a high volume of incidents and tasks</li>
         </ul>
       
         <!-- Parque Náutico de Castrelo -->
         <div style="margin-bottom: 0;">
           <strong>Software Developer</strong><br>
-          <em>May 2023 – November 2023</em><br>
-          <a href="https://nauticodecastrelo.com/#" target="_blank">Parque Náutico de Castrelo</a> – Ourense, Spain
+          <em>May 2023 - November 2023</em><br>
+          <a href="https://nauticodecastrelo.com/#" target="_blank">Parque Náutico de Castrelo</a> | Ourense, Spain
         </div>
         <ul style="margin-top: 5px; margin-bottom: 15px;">
-          <li>Developed a Python-based meteorological application during my <a href="https://www.gvsu.edu/catalog/course/itc-100.htm" target="_blank">Intercultural Communication & Service Learning Spain Study Abroad program</a></li>
-          <li>Automated the generation of weather databases and visualizations to support environmental sustainability projects</li>
-          <li>Improved data processing speed by over 200,000% and packaged the tool as a standalone executable</li>
+          <li>Developed a Python-based meteorological software application during my <a href="https://gvsu-study-abroad.via-trm.com/visitor-programs-v2" target="_blank">Intercultural Communication & Service Learning study abroad program in Spain</a></li>
+          <li>Automated the generation of weather databases and visualizations to support environmental sustainability projects, improving data processing speed by over 200,000%</li>
           <li>Built both a Command Line Interface (CLI) and Graphical User Interface (GUI), with multilingual support (English, Spanish, Galician)</li>
-          <li>Worked both in-person in Spain and remotely in the United States</li>
+          <li>Worked in-person in Spain and continued remotely after returning to the United States</li>
         </ul>
       </section>
       
@@ -860,7 +884,7 @@
         Project Videos: Spot Micro Robot Demonstrations
       -->
       <div style="margin-bottom: 1rem;"></div>
-      Below are demonstrations of the Spot Micro Agile Robot Do project, showing remote control movement and testing. See full project details in <a href="https://marcos-sanson.github.io/#projects:~:text=7.%20Spot%20Micro%20Agile%20Robot%20Dog" target="_blank">Project 7</a> below or visit our <a href="https://sites.google.com/view/senior-tech-project" target="_blank">Spot Micro Robot Project Website</a>.
+      Below are demonstrations of the Spot Micro Agile Robot Dog project, showing remote control movement and testing. See full project details in <a href="https://marcos-sanson.github.io/#projects:~:text=7.%20Spot%20Micro%20Agile%20Robot%20Dog" target="_blank">Project 7</a> below or visit our <a href="https://sites.google.com/view/senior-tech-project" target="_blank">Spot Micro Robot Project Website</a>.
       <br>
       <div style="height: 1em;"></div>
       <div class="video-container">
@@ -875,7 +899,7 @@
           <iframe src="https://www.youtube.com/embed/PsGRDcfPXAw" 
         title="Spot Micro ROM Demo" frameborder="0" allowfullscreen>
           </iframe>
-          <p class="video-caption">Spot Micro - Robot Operating Mode (ROM) Testing</p>
+          <p class="video-caption">Spot Micro - Remote Operation Testing</p>
         </div>
       </div>
 
@@ -884,10 +908,10 @@
         Each <li> below is a separate project, with images, descriptions, and links.
       -->
       <ul>
-        <!-- Project 1: Evolvability-Enhancing Mutations -->
+        <!-- Project 1: Identifying Evolvability-Enhancing Mutations via Computational Models -->
         <li class="project-item">
           <span class="project-title">1. Identifying Evolvability-Enhancing Mutations via Computational Models</span>
-          <em>October 2024 – May 2025</em>
+          <em>October 2024 - May 2025</em>
           <div style="margin-top: 10px;"></div>
 
           <!-- Project Poster Image -->
@@ -915,10 +939,10 @@
           </ul>
         </li>
         
-        <!-- Project 2: Automatic Atrium Segmentation -->
+        <!-- Project 2: Automatic Atrium Segmentation with Machine Learning -->
         <li class="project-item">
-          <span class="project-title">2. Automatic Atrium Segmentation via Machine Learning</span>
-          <em>September 2024 – December 2024</em>
+          <span class="project-title">2. Automatic Atrium Segmentation with Machine Learning</span>
+          <em>September 2024 - December 2024</em>
           <div style="margin-top: 10px;"></div>
         
           <!-- Project Poster Image -->
@@ -942,19 +966,19 @@
             <li><strong>Impact:</strong> Improved the speed and precision of atrial segmentation, reducing manual effort and enhancing diagnosis and treatment planning in cardiology</li>
             <li><strong>Mentors:</strong>
               <ul>
-                <li>Dr. Gonzalo Ricardo Ríos Muñoz, Assistant Professor, Bioengineering Department, Universidad Carlos III de Madrid (UC3M)</li>
-                <li>Dr. Pablo Martínez Olmos, Associate Professor, Signal Theory and Communications Department, UC3M</li>
-                <li>Dr. Antonio Artés Rodríguez, Professor, Signal Theory and Communications Department, UC3M</li>
+                <li>Dr. Gonzalo Ricardo Ríos Muñoz, Assistant Professor, <a href="https://www.uc3m.es/bioengineering-department/home" target="_blank">Bioengineering Department</a>, <a href="https://www.uc3m.es/" target="_blank">Universidad Carlos III de Madrid (UC3M)</a></li>
+                <li>Dr. Pablo Martínez Olmos, Associate Professor, <a href="https://www.tsc.uc3m.es/en/index.php" target="_blank">Signal Theory and Communications Department</a>, <a href="https://www.uc3m.es/" target="_blank">Universidad Carlos III de Madrid (UC3M)</a></li>
+                <li>Dr. Antonio Artés Rodríguez, Professor, <a href="https://www.tsc.uc3m.es/en/index.php" target="_blank">Signal Theory and Communications Department</a>, <a href="https://www.uc3m.es/" target="_blank">Universidad Carlos III de Madrid (UC3M)</a></li>
               </ul>
             </li>
             <li><strong>GitHub Repository:</strong> <a href="https://github.com/officialconfuzius/cardiologyml" target="_blank">https://github.com/officialconfuzius/cardiologyml</a></li>
           </ul>
         </li>
         
-        <!-- Project 3: Phylogenetic Analysis for Evolutionary Search -->
+        <!-- Project 3: Exploiting Phylogenetic Analysis to Improve Evolutionary Search Algorithms -->
         <li class="project-item">
-          <span class="project-title">3. Phylogenetic Analysis for Evolutionary Search Algorithms</span>
-          <em>September 2023 – July 2024</em>
+          <span class="project-title">3. Exploiting Phylogenetic Analysis to Improve Evolutionary Search Algorithms</span>
+          <em>September 2023 - July 2024</em>
           <div style="margin-top: 10px;"></div>
         
           <!-- Project Poster Image -->
@@ -986,7 +1010,7 @@
         <!-- Project 4: Procedural RPG -->
         <li class="project-item">
           <span class="project-title">4. Procedurally-generated 2D Role-playing Game</span>
-          <em>January 2024 – April 2024</em>
+          <em>January 2024 - April 2024</em>
           <div style="margin-top: 10px;"></div>
         
           <!-- Project Screenshot -->
@@ -999,7 +1023,7 @@
           </div>
         
           <ul style="margin-top: 8px; margin-bottom: 8px;">
-            <li><strong>Overview:</strong> In a <a href="https://www.gvsu.edu/catalog/course/cis-350.htm" target="_blank">software engineering course (CIS 350)</a>, I collaborated with a team to develop a 2D role-playing game featuring procedurally generated content. Our goal was to enhance replayability and player engagement by ensuring unique gameplay experiences with each session.</li>
+            <li><strong>Overview:</strong> In a <a href="https://www.gvsu.edu/catalog/course/cis-350.htm" target="_blank">software engineering course (CIS 350)</a>, I collaborated with a team of students to develop a 2D role-playing game featuring procedurally generated content. Our goal was to enhance replayability and player engagement by ensuring unique gameplay experiences with each session.</li>
             <li><strong>Key Activities:</strong>
               <ul>
                 <li>Designed core game mechanics, including character progression and combat systems</li>
@@ -1015,7 +1039,7 @@
         <!-- Project 5: Meteorological Software Application -->
         <li class="project-item">
           <span class="project-title">5. Meteorological Software Application</span>
-          <em>May 2023 – November 2023</em>
+          <em>May 2023 - November 2023</em>
           <div style="margin-top: 10px;"></div>
         
           <!-- Project GUI Example -->
@@ -1044,7 +1068,7 @@
         <!-- Project 6: Integrated ML for Robot Control -->
         <li class="project-item">
           <span class="project-title">6. Integrated Machine Learning for Robot Control</span>
-          <em>October 2022 – September 2023</em>
+          <em>October 2022 - September 2023</em>
           <div style="margin-top: 10px;"></div>
         
           <!-- Seminar Presentation Image -->
@@ -1073,7 +1097,7 @@
         <!-- Project 7: Spot Micro Agile Robot Dog -->
         <li class="project-item">
           <span class="project-title">7. Spot Micro Agile Robot Dog</span>
-          <em>October 2021 – May 2022</em>
+          <em>October 2021 - May 2022</em>
           <div style="margin-top: 10px;"></div>
         
           <!-- Project Photo -->
@@ -1117,7 +1141,7 @@
         Alexander Lalejini, <strong>Marcos Sanson</strong>, Jack Garbus, Matthew Andres Moreno, and Emily Dolson. 2024.
         Runtime phylogenetic analysis enables extreme subsampling for test-based problems.
         In <em>Proceedings of the Genetic and Evolutionary Computation Conference Companion (GECCO '24 Companion)</em>.
-        Association for Computing Machinery, New York, NY, USA, 511–514.
+        Association for Computing Machinery, New York, NY, USA, 511-514.
         <a href="https://doi.org/10.1145/3638530.3654208" target="_blank">https://doi.org/10.1145/3638530.3654208</a>
       </li>
     </ul>
@@ -1171,6 +1195,18 @@
         </div>
         <a href="https://www.gvsu.edu/fellowships/fellowship-profiles-250.htm" target="_blank">Read More</a>
       </li>
+
+      <!-- March 28, 2025 -->
+      <li>
+        <a href="https://goldwaterscholarship.gov/2025-scholars/" target="_blank" style="color: #333; text-decoration: none;">
+          <strong class="article-title"> Goldwater Scholarship Foundation Website - Barry Goldwater 2025 Scholars</strong>
+        </a>
+        <em class="article-date" style="display: block; margin-top: -5px; margin-bottom: 8px;">March 28, 2025</em>
+        <div class="article-content">
+            I was recognized as a 2025 Barry Goldwater Scholar and featured on the official <a href="https://goldwaterscholarship.gov/" target="_blank">Goldwater Scholarship Foundation website</a>. The listing includes my career goal to earn a Ph.D. in computer science and conduct research at a national laboratory, and acknowledges my mentors Dr. Alexander Lalejini, Dr. Jared Moore, and Dr. Austin Ferguson.
+        </div>
+        <a href="https://goldwaterscholarship.gov/2025-scholars/" target="_blank">Read More</a>
+      </li>
   
       <!-- March 8, 2025 -->
       <li>
@@ -1179,7 +1215,7 @@
         </a>
         <em class="article-date" style="display: block; margin-top: -5px; margin-bottom: 8px;">March 8, 2025</em>
         <div class="article-content">
-          I was featured on the official GVSU Student Senate election page as a candidate for the College of Computing. I ran to improve campus support systems, expand opportunities for research and internships, and strengthen student-faculty connections. I was successfully elected as a general senator for the 2025–2026 school year, although I had to step down due to schedule conflicts with the position, and passed my seat to the next elected candidate.
+          I was featured on the official GVSU Student Senate election page as a candidate for the College of Computing. I ran to improve campus support systems, expand opportunities for research and internships, and strengthen student-faculty connections. I was successfully elected as a general senator for the 2025-2026 school year, although I had to step down due to schedule conflicts with the position, and passed my seat to the next elected candidate.
         </div>
         <a href="https://www.gvsu.edu/studentsenate/meet-the-candidates-158.htm?recordId_2=0B6E68D7-BB0D-4A38-8F53D5422AF3725E#062115D7-EBA8-3F63-3FDDB53281F0CED7" target="_blank">Read More</a>
       </li>
@@ -1332,7 +1368,7 @@
   -->
   <footer>
     <p>© 2024 Marcos Sanson | <a href="https://github.com/Marcos-Sanson">GitHub</a></p>
-    <p>Last updated: July 2025</p>
+    <p>Last updated: August 2025</p>
     <p style="font-size: 0.85rem;">
       Logo icon by <a href="https://www.freepik.com/icon/letter-m_9687384" target="_blank">Freepik</a>
     </p>    
